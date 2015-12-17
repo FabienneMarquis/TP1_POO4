@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+
+<GridPane minHeight="300.0" minWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="300.0" prefWidth="500.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="127.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Mot du jour">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="bt" mnemonicParsing="false" text="Ajouter un mot">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btModifier" mnemonicParsing="false" text="Modifier un mot ">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btSupprimer" mnemonicParsing="false" text="suprimer un mot">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btRecherche" mnemonicParsing="false" onAction="#lancerVueRecherche" text="Recherche">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="384.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="166.0" prefWidth="382.0">
+                     <children>
+                        <ImageView fx:id="imageDuMot" fitHeight="166.0" fitWidth="201.0" onDragDropped="#ajoutImageparDrag" pickOnBounds="true" preserveRatio="true" />
+                        <TextField fx:id="textfielMot" />
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="textAreaDefinition" prefHeight="200.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" text="Button" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
