@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 
 
-<GridPane minHeight="300.0" minWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+<GridPane minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -16,13 +17,13 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <HBox prefHeight="300.0" prefWidth="500.0">
+      <HBox prefHeight="400.0" prefWidth="600.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="127.0">
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0">
                <children>
                   <Button mnemonicParsing="false" text="Mot du jour">
                      <opaqueInsets>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        <Insets bottom="5.0" top="5.0" />
                      </opaqueInsets>
                      <VBox.margin>
                         <Insets bottom="5.0" top="10.0" />
@@ -32,6 +33,9 @@
                      <VBox.margin>
                         <Insets bottom="5.0" top="10.0" />
                      </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Button>
                   <Button fx:id="btModifier" mnemonicParsing="false" text="Modifier un mot ">
                      <VBox.margin>
@@ -54,12 +58,29 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="166.0" prefWidth="382.0">
                      <children>
-                        <ImageView fx:id="imageDuMot" fitHeight="166.0" fitWidth="201.0" onDragDropped="#ajoutImageparDrag" pickOnBounds="true" preserveRatio="true" />
-                        <TextField fx:id="textfielMot" />
+                        <ImageView fx:id="imageDuMot" fitHeight="166.0" fitWidth="201.0" onDragDropped="#ajoutImageparDrag" pickOnBounds="true" preserveRatio="true" styleClass="imageview" />
+                        <VBox alignment="CENTER" prefHeight="166.0" prefWidth="154.0">
+                           <children>
+                              <Label text="Mot" />
+                              <TextField fx:id="textfielMot" style="-fx-border-insets: 10;">
+                                 <opaqueInsets>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </opaqueInsets>
+                              </TextField>
+                           </children>
+                        </VBox>
                      </children>
                   </HBox>
-                  <TextArea fx:id="textAreaDefinition" prefHeight="200.0" prefWidth="200.0" />
-                  <Button mnemonicParsing="false" text="Button" />
+                  <Label text="Définition">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Label>
+                  <TextArea fx:id="textAreaDefinition" prefHeight="160.0" prefWidth="358.0" style="-fx-padding: 5; -fx-background-insets: 10;">
+                     <opaqueInsets>
+                        <Insets bottom="10.0" top="5.0" />
+                     </opaqueInsets>
+                  </TextArea>
                </children>
             </VBox>
          </children>
