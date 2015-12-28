@@ -9,7 +9,8 @@
 <?import javafx.scene.layout.GridPane?>
 
 
-<GridPane minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+<GridPane minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8.0.40" fx:controller="controleurTP1.ControleurFXML">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
