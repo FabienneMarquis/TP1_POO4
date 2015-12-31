@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../modeleTP1/Model_TP1.iml" filepath="$PROJECT_DIR$/../modeleTP1/Model_TP1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../VueTP1/Vue_TP1.iml" filepath="$PROJECT_DIR$/../VueTP1/Vue_TP1.iml" />
       <module fileurl="file://$PROJECT_DIR$/controleurTP1.iml" filepath="$PROJECT_DIR$/controleurTP1.iml" />
     </modules>
   </component>

@@ -38,8 +38,8 @@ public class Controleur extends Application implements Initializable{
 		String path = "/vueMenuDebut.fxml";
 		System.out.println(path);
 		System.out.println(getClass());
-		System.out.println(getClass().getResource(
-				path).getPath());
+		//System.out.println(getClass().getResource(
+				//path).getPath());
 		System.out.println("FUCK");
 		root = FXMLLoader.load(getClass().getResource(
 				path));

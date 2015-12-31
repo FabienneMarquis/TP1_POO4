@@ -24,9 +24,25 @@
         <processorPath useClasspath="true" />
         <module name="controleurTP1" />
       </profile>
+      <profile default="false" name="Annotation profile for Model_TP1" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Model_TP1" />
+      </profile>
+      <profile default="false" name="Annotation profile for Vue_TP1" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Vue_TP1" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="controleurTP1" target="1.8" />
+      <module name="Model_TP1" target="1.8" />
+      <module name="Vue_TP1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
