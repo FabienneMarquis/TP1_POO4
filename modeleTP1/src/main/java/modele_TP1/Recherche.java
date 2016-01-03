@@ -2,6 +2,8 @@ package modele_TP1;
 
 import java.time.LocalDate;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Recherche {
 
@@ -37,9 +39,9 @@ public class Recherche {
         return middle;
     }
 
-    public Boolean rechercheMot(String recherche){
+    public Mot rechercheMot(String recherche){
         int pos = recherchePosMot(recherche);
-        return pos>=0;
+        return pos>=0?dictionnaire.getMots().get(pos):null;
     }
 
     public List<Mot> rechercheMotParPrefix(String prefix){
@@ -216,6 +218,37 @@ public class Recherche {
         return out;
     }
 
+    private String getRegexFromWildCardString(String wildcard){
+        String regex = "";
+        for(char c : wildcard.toCharArray()){
+            if(c == '*')
+                regex += ".*";
+            else if(c == '?')
+                regex += ".";
+            else regex += c;
+        }
+        return regex;
+    }
+    private List<Mot> rechercheMotParRegex(String regex){
+
+        Pattern p = Pattern.compile(regex);
+
+        List<Mot> out = new ArrayList<>();
+        dictionnaire.getMots().forEach((Mot mot)->{
+
+            Matcher m = p.matcher(mot.getMot());
+            if(m.matches()){
+                out.add(mot);
+            }
+        });
+        return out;
+    }
+    public List<Mot> rechercheMotAvecWildcards(String wildcard){
+
+        String regex = getRegexFromWildCardString(wildcard);
+        return rechercheMotParRegex(regex);
+    }
+
     public static void main(String[] args) {
         MotFactory motFactory = MotFactory.getInstance();
         Dictionnaire dictionnaire = new Dictionnaire(motFactory.getMots());
@@ -230,13 +263,13 @@ public class Recherche {
 //        System.out.println(mot.getMot());
 //        System.out.println("time for recherche: "+(stopTime-startTime)+"ms");
 //
-        startTime = System.currentTimeMillis();
-        List<Mot> mots = recherche.rechercheMotParPrefix("ab");
-        stopTime = System.currentTimeMillis();
-        for(Mot mot1: mots){
-            System.out.println(mot1.getMot()+"-"+mot1.getCreatedAt());
-        }
-        System.out.println("time for recherche: "+(stopTime-startTime)+"ms");
+//        startTime = System.currentTimeMillis();
+//        List<Mot> mots = recherche.rechercheMotParPrefix("ab");
+//        stopTime = System.currentTimeMillis();
+//        for(Mot mot1: mots){
+//            System.out.println(mot1.getMot()+"-"+mot1.getCreatedAt());
+//        }
+//        System.out.println("time for recherche: "+(stopTime-startTime)+"ms");
 
 //        startTime = System.currentTimeMillis();
 //        List<Mot> motsParDateCreation = recherche.rechercheApresDateCreation(LocalDate.of(2015,12,31));
@@ -258,9 +291,9 @@ public class Recherche {
 //        }
 //        System.out.println("time for recherche: "+(stopTime-startTime)+"ms #result: "+i);
 
-//
+////
 //        startTime = System.currentTimeMillis();
-//        List<Mot> mots = recherche.rechercheMotContenant("ion");
+//        List<Mot> mots = recherche.rechercheMotContenant("sa");
 //        stopTime = System.currentTimeMillis();
 //        int i = 0;
 //        for(Mot mot: mots){
@@ -268,5 +301,16 @@ public class Recherche {
 //            System.out.println(mot.getMot() + "-" + mot.getCreatedAt());
 //        }
 //        System.out.println("time for recherche: "+(stopTime-startTime)+"ms #result: "+i);
+        startTime = System.currentTimeMillis();
+        List<Mot> mots = recherche.rechercheMotAvecWildcards("av*r?");
+        stopTime = System.currentTimeMillis();
+        int i = 0;
+        for(Mot mot1: mots){
+            i++;
+            System.out.println(mot1.getMot()+"-"+mot1.getCreatedAt());
+        }
+        System.out.println("time for recherche: "+(stopTime-startTime)+"ms #result: "+i);
     }
+
+
 }
