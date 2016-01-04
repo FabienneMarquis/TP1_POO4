@@ -61,3 +61,7 @@
     -fx-border-width: 1.5;
 	
 }
+
+.textfield{
+	-fx-padding: 10 6 6 6;
+}
