@@ -36,11 +36,7 @@ public class Controleur extends Application implements Initializable{
 	 */
 	public void start(Stage primaryStage) throws Exception {
 		String path = "/vueMenuDebut.fxml";
-		System.out.println(path);
-		System.out.println(getClass());
-		//System.out.println(getClass().getResource(
-				//path).getPath());
-		System.out.println("FUCK");
+
 		root = FXMLLoader.load(getClass().getResource(
 				path));
 		scene = new Scene(root);
