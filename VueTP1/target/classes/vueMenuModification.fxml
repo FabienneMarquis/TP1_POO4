@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-
-<GridPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+<GridPane prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
-      <ColumnConstraints />
-      <ColumnConstraints />
+      <ColumnConstraints maxWidth="308.0" minWidth="188.0" prefWidth="305.0" />
+      <ColumnConstraints maxWidth="412.0" minWidth="292.0" prefWidth="295.0" />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
@@ -20,10 +20,41 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <VBox alignment="CENTER" prefHeight="399.0" prefWidth="275.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-      <VBox prefHeight="399.0" prefWidth="328.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+      <VBox alignment="CENTER" prefHeight="397.0" prefWidth="267.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <children>
-            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <Label text="Critère(s) de recherche">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="188.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" text="Image" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="138.0" prefHeight="60.0" prefWidth="188.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" text="Mot" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="188.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" text="Définition" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="108.0" prefHeight="60.0" prefWidth="188.0">
+               <children>
+                  <TextField alignment="CENTER" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" text="Recherche" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <children>
+            <Label text="Résultat de la recherche" />
+            <ListView prefHeight="200.0" prefWidth="300.0" />
+            <ImageView fitHeight="108.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </VBox>
    </children>

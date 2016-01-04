@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -7,16 +9,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-
-<GridPane minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+<GridPane alignment="TOP_CENTER" minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
-      <HBox prefHeight="400.0" prefWidth="600.0">
+      <HBox prefHeight="400.0" prefWidth="600.0" GridPane.rowIndex="1">
          <children>
             <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0">
                <children>
@@ -57,7 +59,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="166.0" prefWidth="382.0">
                      <children>
-                        <ImageView fx:id="imageDuMot" fitHeight="166.0" fitWidth="201.0" onDragDropped="#ajoutImageparDrag" pickOnBounds="true" preserveRatio="true" styleClass="imageview" />
+                        <ImageView fx:id="imageDuMot" fitHeight="166.0" fitWidth="201.0" onDragDropped="#ajoutImageparDrag" onMouseDragReleased="#ajoutImageparDrag" pickOnBounds="true" preserveRatio="true" styleClass="imageview" />
                         <VBox alignment="CENTER" prefHeight="166.0" prefWidth="154.0">
                            <children>
                               <Label text="Mot" />
@@ -84,5 +86,10 @@
             </VBox>
          </children>
       </HBox>
+      <Text stroke="#91c2bd" strokeType="OUTSIDE" text="Dictionnaire intéractif" textAlignment="CENTER" wrappingWidth="599.56640625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
    </children>
 </GridPane>
