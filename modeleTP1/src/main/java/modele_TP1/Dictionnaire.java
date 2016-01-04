@@ -61,4 +61,20 @@ public class Dictionnaire {
         isSortedByDateOfModification = false;
         isSortedByDateOfCreation = false;
     }
+
+    public boolean isSortedByMot() {
+        return isSortedByMot;
+    }
+
+    public boolean isSortedByDateOfCreation() {
+        return isSortedByDateOfCreation;
+    }
+
+    public boolean isSortedByDateOfModification() {
+        return isSortedByDateOfModification;
+    }
+
+    public boolean isSortedByImage() {
+        return isSortedByImage;
+    }
 }

@@ -13,6 +13,11 @@ public class Recherche {
         this.dictionnaire = dictionnaire;
     }
 
+    public void recherche(Requete requete){
+
+
+    }
+
 	//méthode de recherche selon le texte du mot
     private int recherchePosMot(String recherche){
         int pos;
@@ -136,7 +141,7 @@ public class Recherche {
     private int rechercheParDateDeCreation(LocalDate date){
 
         int pos;
-        dictionnaire.sortByMot();
+        dictionnaire.sortByDateOfCreation();
 
         if (dictionnaire.getMots().isEmpty()){
             return -1;
@@ -160,7 +165,7 @@ public class Recherche {
     }
 
     private int rechercheParDateDeModification(LocalDate date){
-        dictionnaire.sortByMot();
+        dictionnaire.sortByDateOfModification();
 
         int pos;
 

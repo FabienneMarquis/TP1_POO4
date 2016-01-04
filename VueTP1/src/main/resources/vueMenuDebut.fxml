@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<GridPane alignment="TOP_CENTER" minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane alignment="TOP_CENTER" minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleurTP1.ControleurFXML">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>

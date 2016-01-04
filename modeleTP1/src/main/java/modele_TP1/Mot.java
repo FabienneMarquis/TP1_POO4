@@ -32,17 +32,7 @@ public class Mot {
 		imageURL = "";
 	}
 
-	public void effacerUnMotduDictionnaire(Object mot) {
 
-	}
-
-	public void modifierDéfinitionduMot(Object mot) {
-
-	}
-
-	public void modifierLeMot(Object mot) {
-
-	}
 
 	public String getMot() {
 		return mot;
