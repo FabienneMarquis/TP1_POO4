@@ -48,14 +48,10 @@ public class Controleur extends Application implements Initializable{
 	
 	
 	/**
-	 * Methode qui réinitie la recherche ? à voir si c'est utile dans le contexte du TP1
+	 * Methode qui réinitie la recherche ? ou qui implémente le dictionnaire de base avant le début du programme
+	 * 
 	 */
 	
-	public void init() {
-				
-	}
-
-
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
