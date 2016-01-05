@@ -19,6 +19,7 @@ public class Requete {
     private List<Mot> resultat;
     private boolean prefix;
     private Dictionnaire dictionnaire;
+    private long rechercheTime;
 
     /**
      *
@@ -146,6 +147,7 @@ public class Requete {
     }
 
     public void recherche(){
+        rechercheTime = System.currentTimeMillis();
         Recherche recherche = new Recherche(dictionnaire);
         if(resultat==null) resultat = new ArrayList<>();
         if(mot!= null){
@@ -159,28 +161,49 @@ public class Requete {
                 }
             }
         }
+
         if(avantCreation!= null){
+            if(resultat.size() == 0)
+                resultat = dictionnaire.getMots();
+
             recherche = new Recherche(new Dictionnaire(resultat));
             resultat = recherche.rechercheAvantDateCreation(avantCreation);
         }
 
         if(apresCreation != null){
+            if(resultat.size() == 0)
+                resultat = dictionnaire.getMots();
+
             recherche = new Recherche(new Dictionnaire(resultat));
             resultat = recherche.rechercheApresDateCreation(apresCreation);
         }
 
         if(avantModification!=null){
+            if(resultat.size() == 0)
+                resultat = dictionnaire.getMots();
+
             recherche = new Recherche(new Dictionnaire(resultat));
-            resultat = recherche.rechercheAvantDateModification(apresCreation);
+            resultat = recherche.rechercheAvantDateModification(avantModification);
         }
         if(apresModification!=null){
+            if(resultat.size() == 0)
+                resultat = dictionnaire.getMots();
+
             recherche = new Recherche(new Dictionnaire(resultat));
-            resultat = recherche.rechercheApresDateModification(apresCreation);
+            resultat = recherche.rechercheApresDateModification(apresModification);
         }
         if(posedeImage){
+            if(resultat.size() == 0)
+                resultat = dictionnaire.getMots();
+
             recherche = new Recherche(new Dictionnaire(resultat));
             resultat = recherche.rechercheMotAvecImage(posedeImage);
         }
+        rechercheTime = System.currentTimeMillis() - rechercheTime;
+        System.out.println(rechercheTime);
     }
 
+    public long getRechercheTime() {
+        return rechercheTime;
+    }
 }

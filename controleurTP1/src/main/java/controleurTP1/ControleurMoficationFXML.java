@@ -1,19 +1,20 @@
 package controleurTP1;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import modele_TP1.DictionnairePrincipale;
 
 public class ControleurMoficationFXML implements Initializable {
 	@FXML
@@ -87,7 +88,7 @@ public class ControleurMoficationFXML implements Initializable {
 
     @FXML
     void quitterProgramme(ActionEvent event) {
-        Alert alert = new Alert(AlertType.Confirmation);
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Avertissement");
         alert.setHeaderText("Quitter?");
         alert.setContentText("Voulez-vous quitter le dictionnaire");
