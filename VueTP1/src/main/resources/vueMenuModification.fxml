@@ -53,6 +53,14 @@
                         <Insets bottom="5.0" top="10.0" />
                      </VBox.margin>
                   </Button>
+                  <Button fx:id="btnQuitter" mnemonicParsing="false" onAction="#quitterProgramme" text="Quitter">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </Button>
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="400.0" prefWidth="384.0">
