@@ -49,7 +49,7 @@ public class MotFactory {
         List<Mot> dictionnaire = new ArrayList<>();
         try{
             List<String> words = Files.readAllLines(path, StandardCharsets.UTF_8);
-            words.forEach((String word)->dictionnaire.add(new Mot(word)));
+            words.forEach((String word)->dictionnaire.add(new Mot(word.toLowerCase())));
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

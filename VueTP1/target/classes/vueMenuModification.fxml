@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<GridPane alignment="TOP_CENTER" minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane alignment="TOP_CENTER" minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleurTP1.ControleurMoficationFXML">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -22,7 +22,7 @@
          <children>
             <VBox alignment="CENTER" prefHeight="300.0" prefWidth="269.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#motdujourRandom" text="Mot du jour">
+                  <Button fx:id="btMotduJour" mnemonicParsing="false" onAction="#motdujourRandom" text="Mot du jour">
                      <opaqueInsets>
                         <Insets bottom="5.0" top="5.0" />
                      </opaqueInsets>
@@ -30,7 +30,7 @@
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="bt" mnemonicParsing="false" onAction="#ajouterMot" text="Ajouter un mot">
+                  <Button fx:id="btAjouterMot" mnemonicParsing="false" onAction="#ajouterMot" text="Ajouter un mot">
                      <VBox.margin>
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>

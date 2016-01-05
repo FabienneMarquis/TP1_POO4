@@ -89,6 +89,9 @@ public class Requete {
     }
 
 
+    public void setPrefix(boolean prefix) {
+        this.prefix = prefix;
+    }
 
     /**
      *
@@ -174,7 +177,7 @@ public class Requete {
             recherche = new Recherche(new Dictionnaire(resultat));
             resultat = recherche.rechercheApresDateModification(apresCreation);
         }
-        if(posedeImage!=null){
+        if(posedeImage){
             recherche = new Recherche(new Dictionnaire(resultat));
             resultat = recherche.rechercheMotAvecImage(posedeImage);
         }

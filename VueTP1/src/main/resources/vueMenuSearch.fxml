@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<GridPane prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane prefHeight="400.0" prefWidth="800.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleurTP1.ControleurRechercheFXML">
    <columnConstraints>
-      <ColumnConstraints minWidth="400.0" />
-      <ColumnConstraints maxWidth="5.0" minWidth="0.0" prefWidth="0.0" />
-      <ColumnConstraints maxWidth="308.0" minWidth="200.0" prefWidth="188.0" />
+      <ColumnConstraints maxWidth="546.0" minWidth="400.0" prefWidth="400.0" />
+      <ColumnConstraints maxWidth="160.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="395.0" minWidth="400.0" prefWidth="400.0" />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
@@ -20,7 +20,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Text stroke="#91c2bd" strokeType="OUTSIDE" text="Dictionnaire intéractif" textAlignment="CENTER" wrappingWidth="396.56640625">
+      <Text stroke="#91c2bd" strokeType="OUTSIDE" text="Dictionnaire intéractif" textAlignment="CENTER" wrappingWidth="400.0">
          <font>
             <Font size="24.0" />
          </font>
@@ -32,21 +32,55 @@
                   <Insets bottom="15.0" />
                </padding>
             </Label>
-            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="188.0">
+            <GridPane prefHeight="297.0" prefWidth="400.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+              </rowConstraints>
                <children>
-                  <CheckBox fx:id="checkBoxImage" mnemonicParsing="false" text="Image" />
+                  <CheckBox fx:id="checkBoxImage" mnemonicParsing="false" onAction="#rechercheModifier" text="Image">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="checkBoxMotsContenant" mnemonicParsing="false" onAction="#rechercheModifier" text="Mots Contenant" GridPane.columnIndex="1" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date apres entree" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin></Text>
+                  <DatePicker fx:id="dateApresEntree" onAction="#rechercheModifier" promptText="Date d'entrée" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></DatePicker>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date avant entree" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin></Text>
+                  <DatePicker fx:id="dateAvantEntree" onAction="#rechercheModifier" promptText="Date d'entrée" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date apres Modification" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin></Text>
+                  <DatePicker fx:id="dateApresModification" onAction="#rechercheModifier" promptText="Date d'entrée" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date avant modification" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin></Text>
+                  <DatePicker fx:id="dateAvantModification" onAction="#rechercheModifier" promptText="Date d'entrée" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
-            </HBox>
-            <HBox alignment="CENTER" layoutX="10.0" layoutY="138.0" prefHeight="60.0" prefWidth="188.0">
-               <children>
-                  <DatePicker fx:id="daterechercher" promptText="Date d'entrée" />
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="200.0">
-               <children>
-                  <CheckBox mnemonicParsing="false" text="Avant la date" />
-               </children>
-            </HBox>
+            </GridPane>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="188.0" />
+
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="138.0" prefHeight="60.0" prefWidth="188.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="144.0" prefHeight="60.0" prefWidth="188.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="174.0" prefHeight="60.0" prefWidth="188.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="204.0" prefHeight="60.0" prefWidth="188.0" />
             <HBox alignment="CENTER" layoutX="10.0" layoutY="108.0" prefHeight="60.0" prefWidth="188.0">
                <children>
                   <TextField fx:id="motOuDefinietionRechercher" alignment="CENTER" prefHeight="31.0" prefWidth="164.0" />
@@ -55,7 +89,7 @@
             <Button fx:id="btnRecherche" mnemonicParsing="false" onAction="#rechercheSelonCriteres" text="Recherche" />
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="368.0" prefWidth="112.0" GridPane.rowIndex="2">
+      <VBox alignment="CENTER" prefHeight="368.0" prefWidth="344.0" GridPane.rowIndex="2">
          <children>
             <Label text="Résultat de la recherche" />
             <ListView fx:id="listeViewResultatRecherche" minWidth="300.0" prefHeight="200.0" prefWidth="244.0">
@@ -65,7 +99,7 @@
             </ListView>
          </children>
       </VBox>
-      <Text stroke="#91c2bd" strokeType="OUTSIDE" text="Recherche" textAlignment="CENTER" wrappingWidth="223.56640625" GridPane.columnIndex="2">
+      <Text stroke="#91c2bd" strokeType="OUTSIDE" text="Recherche" textAlignment="CENTER" wrappingWidth="400.0" GridPane.columnIndex="2">
          <font>
             <Font size="24.0" />
          </font>

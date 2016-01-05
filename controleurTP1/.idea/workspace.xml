@@ -2,45 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0706e136-2cc1-44e5-a36b-4dafdc8407a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Resultat.java" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\classes\liste.de.mots.francais.frgut.utf8.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\classes\modele_TP1\Dictionnaire.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\classes\modele_TP1\Mot.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\classes\modele_TP1\MotFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\classes\modele_TP1\Recherche.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\classes\modele_TP1\Trie.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\classes\stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\classes\vueMenuDebut.fxml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\classes\vueMenuModification.fxml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\META-INF\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\META-INF\maven\TP1_FM_GP\Model_TP1\pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\META-INF\maven\TP1_FM_GP\Model_TP1\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\META-INF\maven\TP1_FM_GP\Vue_TP1\pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\META-INF\maven\TP1_FM_GP\Vue_TP1\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\controleurTP1\Controleur.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\controleurTP1\ControleurFXML.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\modele_TP1\Mot.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\modele_TP1\Recherche.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\vueMenuDebut.fxml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT-jar-with-dependencies\vueMenuModification.fxml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\controleurTP1\target\controleur_TP1-0.0.1-SNAPSHOT.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controleurTP1/Controleur.class" afterPath="$PROJECT_DIR$/target/classes/controleurTP1/Controleur.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controleurTP1/ControleurFXML.class" afterPath="$PROJECT_DIR$/target/classes/controleurTP1/ControleurFXML.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Dictionnaire.class" afterPath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Dictionnaire.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Mot.class" afterPath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Mot.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/MotFactory.class" afterPath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/MotFactory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Recherche.class" afterPath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Recherche.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurFXML.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Dictionnaire.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Dictionnaire.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Mot.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Mot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/DictionnairePrincipale.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/DictionnairePrincipale.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controleurTP1.iml" afterPath="$PROJECT_DIR$/controleurTP1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuDebut.fxml" afterPath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuDebut.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModification.fxml" afterPath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModification.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../VueTP1/target/classes/vueMenuModification.fxml" afterPath="$PROJECT_DIR$/../VueTP1/target/classes/vueMenuModification.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml" afterPath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="controleurTP1.iws" />
@@ -65,22 +41,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Mot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Mot.java">
+      <file leaf-file-name="ControleurRechercheFXML.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-              <folding />
+            <state vertical-scroll-proportion="-14.851851">
+              <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="192" column="21" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
+              <caret line="186" column="28" selection-start-line="186" selection-start-column="28" selection-end-line="186" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,110 +69,22 @@
         <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+              <caret line="51" column="84" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Requete.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java">
+      <file leaf-file-name="vueMenuSearch.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4769737">
-              <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2520#2521#0" expanded="true" />
-                <element signature="e#2551#2552#0" expanded="true" />
-                <element signature="e#2625#2626#0" expanded="true" />
-                <element signature="e#2651#2652#0" expanded="true" />
-                <element signature="e#2746#2747#0" expanded="true" />
-                <element signature="e#2782#2783#0" expanded="true" />
-                <element signature="e#2877#2878#0" expanded="true" />
-                <element signature="e#2913#2914#0" expanded="true" />
-                <element signature="e#3016#3017#0" expanded="true" />
-                <element signature="e#3056#3057#0" expanded="true" />
-                <element signature="e#3159#3160#0" expanded="true" />
-                <element signature="e#3199#3200#0" expanded="true" />
-                <element signature="e#3289#3290#0" expanded="true" />
-                <element signature="e#3323#3324#0" expanded="true" />
-                <element signature="e#3356#3357#0" expanded="true" />
-                <element signature="e#3385#3386#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-1.0543479">
+              <caret line="36" column="89" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+              <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resultat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Resultat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding>
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dictionnaire.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Dictionnaire.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1963#1964#0" expanded="true" />
-                <element signature="e#1999#2000#0" expanded="true" />
-                <element signature="e#2048#2049#0" expanded="true" />
-                <element signature="e#2095#2096#0" expanded="true" />
-                <element signature="e#2148#2149#0" expanded="true" />
-                <element signature="e#2199#2200#0" expanded="true" />
-                <element signature="e#2239#2240#0" expanded="true" />
-                <element signature="e#2277#2278#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControleurFXML.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurFXML.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.148149">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vueMenuModification.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModification.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.206897">
-              <caret line="10" column="197" selection-start-line="10" selection-start-column="197" selection-end-line="10" selection-end-column="197" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vueMenuDebut.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuDebut.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="37.13793">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -229,16 +109,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Mot.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Dictionnaire.java" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurFXML.java" />
         <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuDebut.fxml" />
-        <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModification.fxml" />
-        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Resultat.java" />
+        <option value="$PROJECT_DIR$/.classpath" />
+        <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModification.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/DictionnaireController.java" />
+        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/DictionnairePrincipale.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" />
+        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" />
+        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java" />
+        <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml" />
       </list>
     </option>
   </component>
@@ -283,7 +169,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -414,36 +299,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controleurTP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controleurTP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".settings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controleurTP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controleurTP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,6 +313,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RunManager" selected="Application.Controleur">
     <configuration default="false" name="Controleur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -688,29 +548,42 @@
       <option name="number" value="Default" />
       <updated>1451256031640</updated>
     </task>
+    <task id="LOCAL-00001" summary="New Requete systeme">
+      <created>1451933844545</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1451933844545</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Yay lien entre la recherche et l'interface et etabli!">
+      <created>1451946991760</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1451946991760</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.50208336" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -730,9 +603,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New Requete systeme" />
+    <MESSAGE value="Yay lien entre la recherche et l'interface et etabli!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yay lien entre la recherche et l'interface et etabli!" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -741,6 +619,92 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="101" selection-start-line="45" selection-start-column="101" selection-end-line="45" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModification.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Dictionnaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="53" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/DictionnairePrincipale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../modeleTP1/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -753,7 +717,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1503#1504#0" expanded="false" />
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
+            <element signature="e#1610#1611#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1665#1666#0" expanded="false" />
+            <element signature="e#1704#1705#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -777,7 +750,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -795,27 +770,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1963#1964#0" expanded="true" />
-            <element signature="e#1999#2000#0" expanded="true" />
-            <element signature="e#2048#2049#0" expanded="true" />
-            <element signature="e#2095#2096#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
-            <element signature="e#2199#2200#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2277#2278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurFXML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -835,16 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurFXML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../modeleTP1/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -857,25 +802,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1315789">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java">
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Mot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1503#1504#0" expanded="false" />
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
+            <element signature="e#1610#1611#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#1665#1666#0" expanded="false" />
+            <element signature="e#1704#1705#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurFXML.java">
+    <entry file="file://$PROJECT_DIR$/.classpath">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.148149">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.52667814">
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -887,71 +837,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java">
+    <entry file="file://$PROJECT_DIR$/../VueTP1/target/classes/vueMenuModification.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="-0.09326425">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Dictionnaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1963#1964#0" expanded="true" />
-            <element signature="e#1999#2000#0" expanded="true" />
-            <element signature="e#2048#2049#0" expanded="true" />
-            <element signature="e#2095#2096#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
-            <element signature="e#2199#2200#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2277#2278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Mot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModification.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.206897">
-          <caret line="10" column="197" selection-start-line="10" selection-start-column="197" selection-end-line="10" selection-end-column="197" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuDebut.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="37.13793">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Resultat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModification.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Dictionnaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2597#2598#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/DictionnairePrincipale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41935483">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="101" selection-start-line="45" selection-start-column="101" selection-end-line="45" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.851851">
+          <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -959,37 +924,30 @@
     <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="192" column="21" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
+          <caret line="186" column="28" selection-start-line="186" selection-start-column="28" selection-end-line="186" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java">
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4769737">
-          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2625#2626#0" expanded="true" />
-            <element signature="e#2651#2652#0" expanded="true" />
-            <element signature="e#2746#2747#0" expanded="true" />
-            <element signature="e#2782#2783#0" expanded="true" />
-            <element signature="e#2877#2878#0" expanded="true" />
-            <element signature="e#2913#2914#0" expanded="true" />
-            <element signature="e#3016#3017#0" expanded="true" />
-            <element signature="e#3056#3057#0" expanded="true" />
-            <element signature="e#3159#3160#0" expanded="true" />
-            <element signature="e#3199#3200#0" expanded="true" />
-            <element signature="e#3289#3290#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-            <element signature="e#3356#3357#0" expanded="true" />
-            <element signature="e#3385#3386#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="84" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="84" />
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0543479">
+          <caret line="36" column="89" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>

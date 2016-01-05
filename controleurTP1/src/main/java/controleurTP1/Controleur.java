@@ -10,6 +10,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import modele_TP1.Dictionnaire;
+import modele_TP1.DictionnairePrincipale;
+import modele_TP1.MotFactory;
 
 public class Controleur extends Application implements Initializable{
 	@FXML
@@ -35,12 +38,12 @@ public class Controleur extends Application implements Initializable{
 	 * @throws Exception
 	 */
 	public void start(Stage primaryStage) throws Exception {
-		String path = "/vueMenuDebut.fxml";
+		String path = "/vueMenuModification.fxml";
 
 		root = FXMLLoader.load(getClass().getResource(
 				path));
 		scene = new Scene(root);
-
+		DictionnairePrincipale.setDictionnaire(new Dictionnaire(MotFactory.getInstance().getMots()));
 
 	primaryStage.setTitle("Bibliothèque");
 	primaryStage.setScene(scene);
@@ -58,7 +61,7 @@ public class Controleur extends Application implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
-		
+
 	}
 	
 	

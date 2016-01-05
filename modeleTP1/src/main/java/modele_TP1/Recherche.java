@@ -46,7 +46,14 @@ public class Recherche {
 
     public Mot rechercheMot(String recherche){
         int pos = recherchePosMot(recherche);
-        return pos>=0?dictionnaire.getMots().get(pos):null;
+        Mot mot;
+        if(pos>=0){
+            mot = dictionnaire.getMots().get(pos);
+            if(mot.getMot().compareTo(recherche)==0){
+                return mot;
+            }
+        }
+        return null;
     }
 
     public List<Mot> rechercheMotParPrefix(String prefix){
@@ -55,12 +62,14 @@ public class Recherche {
         prefix = prefix.toLowerCase();
         char[] max = prefix.toCharArray();
         max[max.length-1] = (char) (max[max.length-1]+1);
+        System.out.println(max);
 
         int pos = recherchePosMot(prefix);
 
         while (pos >= 0 && pos < dictionnaire.getMots().size()){
-            if(dictionnaire.getMots().get(pos).getMot().compareTo(String.valueOf(max))<=0){
-                mots.add(dictionnaire.getMots().get(pos));
+            if(dictionnaire.getMots().get(pos).getMot().compareTo(String.valueOf(max))<=0 ){
+                if(dictionnaire.getMots().get(pos).getMot().compareTo(prefix)>=0)
+                    mots.add(dictionnaire.getMots().get(pos));
             }else{
                 return mots;
             }
@@ -307,7 +316,7 @@ public class Recherche {
 //        }
 //        System.out.println("time for recherche: "+(stopTime-startTime)+"ms #result: "+i);
         startTime = System.currentTimeMillis();
-        List<Mot> mots = recherche.rechercheMotAvecWildcards("av*r?");
+        List<Mot> mots = recherche.rechercheMotAvecWildcards("avion");
         stopTime = System.currentTimeMillis();
         int i = 0;
         for(Mot mot1: mots){
