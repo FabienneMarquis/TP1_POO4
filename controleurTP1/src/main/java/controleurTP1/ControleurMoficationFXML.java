@@ -27,6 +27,9 @@ public class ControleurMoficationFXML implements Initializable {
     private Button btRecherche;
 
     @FXML
+    private Button btnQuitter;
+
+    @FXML
     private ImageView imageDuMot;
 
     @FXML
@@ -63,6 +66,20 @@ public class ControleurMoficationFXML implements Initializable {
     @FXML
     void supprimerMot(ActionEvent event) {
 
+    }
+
+    @FXML
+    void quitterProgramme(ActionEvent event) {
+        Alert alert = new Alert(AlertType.Confirmation);
+        alert.setTitle("Avertissement");
+        alert.setHeaderText("Quitter?");
+        alert.setContentText("Voulez-vous quitter le dictionnaire");
+        Optional<ButtonType> result = alert.showAndWait();
+
+        if (result.get() == ButtonType.OK){
+            Platform.exit();
+            System.exit(0);
+        }
     }
 
 	@Override

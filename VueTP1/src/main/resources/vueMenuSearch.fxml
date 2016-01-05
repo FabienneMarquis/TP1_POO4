@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<GridPane prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControleurRechercheFXML.java">
    <columnConstraints>
-      <ColumnConstraints minWidth="400.0" />
+      <ColumnConstraints minWidth="300.0" />
       <ColumnConstraints maxWidth="5.0" minWidth="0.0" prefWidth="0.0" />
-      <ColumnConstraints maxWidth="308.0" minWidth="200.0" prefWidth="188.0" />
+      <ColumnConstraints maxWidth="308.0" minWidth="300.0" prefWidth="200.0" />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
@@ -20,7 +20,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Text stroke="#91c2bd" strokeType="OUTSIDE" text="Dictionnaire intéractif" textAlignment="CENTER" wrappingWidth="396.56640625">
+      <Text stroke="#91c2bd" strokeType="OUTSIDE" text="Dictionnaire intéractif -Recherche-" textAlignment="CENTER" wrappingWidth="595.56640625">
          <font>
             <Font size="24.0" />
          </font>
@@ -31,44 +31,50 @@
                <padding>
                   <Insets bottom="15.0" />
                </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
             </Label>
-            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="188.0">
-               <children>
-                  <CheckBox fx:id="checkBoxImage" mnemonicParsing="false" text="Image" />
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" layoutX="10.0" layoutY="138.0" prefHeight="60.0" prefWidth="188.0">
-               <children>
-                  <DatePicker fx:id="daterechercher" promptText="Date d'entrée" />
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="200.0">
-               <children>
-                  <CheckBox mnemonicParsing="false" text="Avant la date" />
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" layoutX="10.0" layoutY="108.0" prefHeight="60.0" prefWidth="188.0">
-               <children>
-                  <TextField fx:id="motOuDefinietionRechercher" alignment="CENTER" prefHeight="31.0" prefWidth="164.0" />
-               </children>
-            </HBox>
-            <Button fx:id="btnRecherche" mnemonicParsing="false" onAction="#rechercheSelonCriteres" text="Recherche" />
+            <CheckBox fx:id="checkBoxImage" mnemonicParsing="false" text="Contient une image">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Recherche partiel">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </CheckBox>
+            <ChoiceBox fx:id="critereRechercheparDate" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <DatePicker fx:id="daterechercher" promptText="Date">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </DatePicker>
+            <TextField fx:id="motOuDefinietionRechercher" alignment="CENTER" prefHeight="31.0" prefWidth="164.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btnRecherche" mnemonicParsing="false" onAction="#rechercheSelonCriteres" text="Recherche">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></Button>
          </children>
       </VBox>
       <VBox alignment="CENTER" prefHeight="368.0" prefWidth="112.0" GridPane.rowIndex="2">
          <children>
             <Label text="Résultat de la recherche" />
-            <ListView fx:id="listeViewResultatRecherche" minWidth="300.0" prefHeight="200.0" prefWidth="244.0">
+            <ListView fx:id="listeViewResultatRecherche" prefHeight="200.0" prefWidth="200.0">
                <VBox.margin>
                   <Insets left="10.0" right="10.0" />
                </VBox.margin>
             </ListView>
          </children>
       </VBox>
-      <Text stroke="#91c2bd" strokeType="OUTSIDE" text="Recherche" textAlignment="CENTER" wrappingWidth="223.56640625" GridPane.columnIndex="2">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
    </children>
 </GridPane>

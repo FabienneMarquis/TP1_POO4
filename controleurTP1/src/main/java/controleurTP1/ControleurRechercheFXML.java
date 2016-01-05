@@ -16,17 +16,28 @@ import javafx.scene.control.Alert.AlertType;
 
 public class ControleurRechercheFXML implements Initializable {
 
+	ObservableList<String> choixRechercheDate = FXCollections
+			.observableArrayList("Avant la date de saisie",
+					"Après la date de saisie", "Avant la date de modification",
+					"Après la date de modification");
+
 	@FXML
-    private CheckBox checkBoxImage;
+	private CheckBox checkBoxImage;
 
-    @FXML
-    private DatePicker daterechercher;
+	@FXML
+	private ChoiceBox<String> critereRechercheparDate;
 
-    @FXML
-    private TextField motOuDefinietionRechercher;
+	@FXML
+	private DatePicker daterechercher;
 
-    @FXML
-    private Button btnRecherche;
+	@FXML
+	private TextField motOuDefinietionRechercher;
+
+	@FXML
+	private Button btnRecherche;
+
+	@FXML
+	private ListView<?> listeViewResultatRecherche;
 
     @FXML
     private ListView<?> listeViewResultatRecherche;
@@ -36,7 +47,7 @@ public class ControleurRechercheFXML implements Initializable {
 			Alert alert = new Alert(AlertType.WARNING);
 			alert.setTitle("Avertissement");
 			alert.setHeaderText("Erreur");
-			alert.setContentText("Il n'y a aucun mot ou définition à recherche");
+			alert.setContentText("Il n'y a aucun mot ou définition a rechercher");
 		}
 		
 
@@ -46,6 +57,7 @@ public class ControleurRechercheFXML implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
 		btnRecherche.setOnAction(this::rechercheSelonCriteres);
+		critereRechercheparDate.setItems(choixRechercheDate);
 	}
 
 }
