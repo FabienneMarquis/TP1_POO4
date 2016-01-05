@@ -22,7 +22,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER" level="application" />
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="module" module-name="Vue_TP1" exported="" />
-    <orderEntry type="module" module-name="Model_TP1" exported="" />
+    <orderEntry type="module" module-name="Vue_TP1" />
+    <orderEntry type="module" module-name="Model_TP1" />
   </component>
 </module>
