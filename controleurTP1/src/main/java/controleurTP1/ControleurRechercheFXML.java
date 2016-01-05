@@ -66,7 +66,6 @@ public class ControleurRechercheFXML implements Initializable {
 			.synchronizedObservableList(FXCollections.observableArrayList());
 	@FXML
 	void rechercheSelonCriteres(ActionEvent event) {
-		System.out.println(motOuDefinietionRechercher.getText());
 		if (motOuDefinietionRechercher.getText().isEmpty()) {
 			Alert alert = new Alert(AlertType.WARNING);
 			alert.setTitle("Avertissement");

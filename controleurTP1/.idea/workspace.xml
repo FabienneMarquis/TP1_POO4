@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0706e136-2cc1-44e5-a36b-4dafdc8407a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Recherche.class" afterPath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Recherche.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../VueTP1/target/classes/vueMenuModification.fxml" afterPath="$PROJECT_DIR$/../VueTP1/target/classes/vueMenuModification.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml" afterPath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="controleurTP1.iws" />
@@ -31,25 +30,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ControleurRechercheFXML.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ControleurRechercheFXML.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.185184">
-              <caret line="114" column="89" selection-start-line="114" selection-start-column="89" selection-end-line="114" selection-end-column="89" />
+            <state vertical-scroll-proportion="0.33562824">
+              <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2060#2061#0" expanded="true" />
-                <element signature="e#2082#2083#0" expanded="true" />
+                <element signature="e#2000#2001#0" expanded="true" />
+                <element signature="e#2022#2023#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Recherche.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Recherche.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3552631">
-              <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+            <state vertical-scroll-proportion="-6.6551723">
+              <caret line="275" column="20" selection-start-line="275" selection-start-column="10" selection-end-line="275" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,12 +59,12 @@
       <file leaf-file-name="Requete.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="205" column="32" selection-start-line="205" selection-start-column="16" selection-end-line="205" selection-end-column="32" />
+            <state vertical-scroll-proportion="-27.413794">
+              <caret line="207" column="29" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5662#5663#0" expanded="true" />
-                <element signature="e#5698#5699#0" expanded="true" />
+                <element signature="e#5719#5720#0" expanded="true" />
+                <element signature="e#5755#5756#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,10 +134,10 @@
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/DictionnaireController.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/DictionnairePrincipale.java" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java" />
-        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java" />
         <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" />
+        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" />
       </list>
@@ -588,12 +587,18 @@
       <option name="project" value="LOCAL" />
       <updated>1452013622671</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Bon la! la recherche est fini. a moin que une autre idee d'amelioration m'arrive...">
+      <created>1452024635365</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1452024635365</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -603,7 +608,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -636,7 +641,8 @@
     <MESSAGE value="Yay lien entre la recherche et l'interface et etabli!" />
     <MESSAGE value="interface et recherche ameliorer" />
     <MESSAGE value="Merge!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge!" />
+    <MESSAGE value="Bon la! la recherche est fini. a moin que une autre idee d'amelioration m'arrive..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bon la! la recherche est fini. a moin que une autre idee d'amelioration m'arrive..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -721,8 +727,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2060#2061#0" expanded="true" />
-            <element signature="e#2082#2083#0" expanded="true" />
+            <element signature="e#2000#2001#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -952,36 +958,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.185184">
-          <caret line="114" column="89" selection-start-line="114" selection-start-column="89" selection-end-line="114" selection-end-column="89" />
+        <state vertical-scroll-proportion="-6.6551723">
+          <caret line="275" column="20" selection-start-line="275" selection-start-column="10" selection-end-line="275" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2060#2061#0" expanded="true" />
-            <element signature="e#2082#2083#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="205" column="32" selection-start-line="205" selection-start-column="16" selection-end-line="205" selection-end-column="32" />
+        <state vertical-scroll-proportion="-27.413794">
+          <caret line="207" column="29" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5662#5663#0" expanded="true" />
-            <element signature="e#5698#5699#0" expanded="true" />
+            <element signature="e#5719#5720#0" expanded="true" />
+            <element signature="e#5755#5756#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3552631">
-          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.33562824">
+          <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2000#2001#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
           </folding>
         </state>
       </provider>

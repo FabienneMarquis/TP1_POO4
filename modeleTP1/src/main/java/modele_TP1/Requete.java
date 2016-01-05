@@ -157,7 +157,9 @@ public class Requete {
                 }else if(prefix) {
                     resultat = recherche.rechercheMotParPrefix(mot);
                 }else {
-                    resultat.add(recherche.rechercheMot(mot));
+                    Mot rechercheMot = recherche.rechercheMot(mot);
+                    if(rechercheMot!=null)
+                        resultat.add(rechercheMot);
                 }
             }
         }
@@ -200,7 +202,6 @@ public class Requete {
             resultat = recherche.rechercheMotAvecImage(posedeImage);
         }
         rechercheTime = System.currentTimeMillis() - rechercheTime;
-        System.out.println(rechercheTime);
     }
 
     public long getRechercheTime() {

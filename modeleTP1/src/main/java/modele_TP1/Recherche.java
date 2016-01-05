@@ -62,12 +62,11 @@ public class Recherche {
         prefix = prefix.toLowerCase();
         char[] max = prefix.toCharArray();
         max[max.length-1] = (char) (max[max.length-1]+1);
-        System.out.println(max);
 
         int pos = recherchePosMot(prefix);
 
         while (pos >= 0 && pos < dictionnaire.getMots().size()){
-            if(dictionnaire.getMots().get(pos).getMot().compareTo(String.valueOf(max))<=0 ){
+            if(dictionnaire.getMots().get(pos).getMot().compareTo(String.valueOf(max))<0 ){
                 if(dictionnaire.getMots().get(pos).getMot().compareTo(prefix)>=0)
                     mots.add(dictionnaire.getMots().get(pos));
             }else{
