@@ -26,7 +26,7 @@
                      <children>
                         <Pane prefHeight="150.0" prefWidth="150.0" styleClass="borders">
                            <children>
-                              <ImageView fx:id="imageDuMot" fitHeight="140.0" fitWidth="150.0" onDragDropped="#ajoutImageparDrag" onMouseDragReleased="#ajoutImageparDrag" pickOnBounds="true" preserveRatio="true" styleClass="borders" />
+                              <fx:include source="DraggableImage.fxml" />
                            </children>
                            <HBox.margin>
                               <Insets bottom="10.0" right="75.0" top="10.0" />

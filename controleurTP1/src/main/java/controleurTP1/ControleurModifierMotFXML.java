@@ -4,17 +4,25 @@ package controleurTP1;
  * Created by Fabienne on 2016-01-05.
  */
 
+        import javafx.application.Application;
+        import javafx.application.Platform;
         import javafx.event.ActionEvent;
         import javafx.fxml.FXML;
-        import javafx.scene.control.Button;
-        import javafx.scene.control.TextArea;
-        import javafx.scene.control.TextField;
+        import javafx.fxml.FXMLLoader;
+        import javafx.fxml.Initializable;
+        import javafx.scene.Parent;
+        import javafx.scene.Scene;
+        import javafx.scene.control.*;
         import javafx.scene.image.ImageView;
+        import javafx.stage.Stage;
 
-public class ControleurModifierMotFXML{
+        import java.io.IOException;
+        import java.net.URL;
+        import java.util.Optional;
+        import java.util.ResourceBundle;
 
-    @FXML
-    private ImageView imageDuMot;
+public class ControleurModifierMotFXML implements Initializable {
+
 
     @FXML
     private TextField textfielMot;
@@ -26,13 +34,36 @@ public class ControleurModifierMotFXML{
     private Button btModifier;
 
     @FXML
-    void ajoutImageparDrag(ActionEvent event) {
+    private Button btnAnnuler;
 
+    @FXML
+    void annuler(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Avertissement");
+        alert.setHeaderText("Quitter?");
+        alert.setContentText("Voulez-vous quitter la modification de mot?");
+        Optional<ButtonType> result = alert.showAndWait();
+
+        if (result.get() == ButtonType.OK){
+
+        }
     }
 
     @FXML
     void modifierMotConfirmation(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Avertissement");
+        alert.setHeaderText("Quitter?");
+        alert.setContentText("Voulez-vous quitter la modification de mot?");
+        Optional<ButtonType> result = alert.showAndWait();
 
+        if (result.get() == ButtonType.OK){
+
+        }
     }
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
 }

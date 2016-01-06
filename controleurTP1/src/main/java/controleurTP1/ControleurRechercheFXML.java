@@ -15,6 +15,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.text.Text;
 import javafx.util.Callback;
 import modele_TP1.DictionnairePrincipale;
 import modele_TP1.Mot;
@@ -58,11 +59,13 @@ public class ControleurRechercheFXML implements Initializable {
 	@FXML
 	private DatePicker dateAvantEntree;
 
+	@FXML
+	private Text statDeRecherche;
+
 	private ObservableList<Mot> observableList = FXCollections
 			.synchronizedObservableList(FXCollections.observableArrayList());
 	@FXML
 	void rechercheSelonCriteres(ActionEvent event) {
-		System.out.println(motOuDefinietionRechercher.getText());
 		if (motOuDefinietionRechercher.getText().isEmpty()) {
 			Alert alert = new Alert(AlertType.WARNING);
 			alert.setTitle("Avertissement");
@@ -108,6 +111,7 @@ public class ControleurRechercheFXML implements Initializable {
 				};
 			}
 		});
+		statDeRecherche.setText("Resultats: "+requete.getResultat().size()+ " Temps: " + requete.getRechercheTime());
 	}
 
 	@Override

@@ -68,12 +68,12 @@
                   <HBox alignment="CENTER" prefHeight="166.0" prefWidth="382.0">
                      <children>
                         <Pane prefHeight="200.0" prefWidth="200.0" styleClass="borders">
-                           <children>
-                              <ImageView fx:id="imageDuMot" fitHeight="166.0" fitWidth="200.0" onDragDropped="#ajoutImageparDrag" onMouseDragReleased="#ajoutImageparDrag" pickOnBounds="true" preserveRatio="true" styleClass="imageview" />
-                           </children>
                            <HBox.margin>
                               <Insets bottom="10.0" />
                            </HBox.margin>
+                           <children>
+                              <ImageView fx:id="imageDuMot" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
                         </Pane>
                         <VBox alignment="CENTER" prefHeight="166.0" prefWidth="154.0">
                            <children>

@@ -44,10 +44,6 @@ public class ControleurMoficationFXML implements Initializable {
     @FXML
     private TextArea textAreaDefinition;
 
-    @FXML
-    void ajoutImageparDrag(ActionEvent event) {
-
-    }
 
     @FXML
     void ajouterMot(ActionEvent event) {
@@ -74,6 +70,18 @@ public class ControleurMoficationFXML implements Initializable {
     @FXML
     void modifierMot(ActionEvent event) {
 
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/vueMenuModifierMot.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Modification");
+            stage.setScene(new Scene(root));
+            stage.show();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

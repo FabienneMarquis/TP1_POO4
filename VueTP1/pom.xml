@@ -18,11 +18,5 @@
           </plugins>
       </pluginManagement>
   </build>
-    <dependencies>
-        <dependency>
-            <groupId>TP1_FM_GP</groupId>
-            <artifactId>controleur_TP1</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+
 </project>
