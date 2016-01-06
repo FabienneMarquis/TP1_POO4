@@ -1,8 +1,6 @@
 package controleurTP1;
 
-import java.awt.event.KeyEvent;
 import java.net.URL;
-import java.time.LocalDate;
 import java.util.Observable;
 import java.util.ResourceBundle;
 
@@ -18,7 +16,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.text.Text;
 import javafx.util.Callback;
-import modele_TP1.DictionnairePrincipale;
+import modele_TP1.Context;
 import modele_TP1.Mot;
 import modele_TP1.Requete;
 
@@ -89,7 +87,7 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 		}
 		Requete requete = new Requete(recherche,dateAvantEntree.getValue()
 				,dateApresEntree.getValue(),dateAvantModification.getValue(),dateApresModification.getValue()
-				,checkBoxImage.isSelected(),DictionnairePrincipale.getDictionnaire());
+				,checkBoxImage.isSelected(), Context.getInstance().getDictionnaire());
 		requete.setPrefix(prefix);
 		requete.recherche();
 

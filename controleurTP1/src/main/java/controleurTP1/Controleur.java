@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import modele_TP1.Dictionnaire;
-import modele_TP1.DictionnairePrincipale;
+import modele_TP1.Context;
 import modele_TP1.MotFactory;
 
 public class Controleur extends Application implements Initializable{
@@ -41,7 +41,7 @@ public class Controleur extends Application implements Initializable{
 		root = FXMLLoader.load(getClass().getResource(
 				path));
 		scene = new Scene(root);
-		DictionnairePrincipale.setDictionnaire(new Dictionnaire(MotFactory.getInstance().getMots()));
+		Context.getInstance().setDictionnaire(new Dictionnaire(MotFactory.getInstance().getMots()));
 
 	primaryStage.setTitle("Bibliothèque");
 	primaryStage.setScene(scene);

@@ -3,27 +3,13 @@ package controleurTP1;
 /**
  * Created by fabienne on 2016-01-05.
  */
-import javafx.application.Platform;
-import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.effect.ColorAdjust;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.image.WritableImage;
-import javafx.scene.input.DragEvent;
-import javafx.scene.input.Dragboard;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.input.TransferMode;
-import javafx.scene.paint.Color;
-import modele_TP1.Dictionnaire;
-import modele_TP1.DictionnairePrincipale;
+import javafx.scene.input.*;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -40,72 +26,89 @@ public class DraggableImageController implements Initializable{
 
         @FXML
         void dragDetected(MouseEvent event) {
+            /* drag was detected, start drag-and-drop gesture*/
 
-            if (dragBoard.hasImage()) {
-                dragBoard = imageView.startDragAndDrop(TransferMode.COPY);
+                /* allow any transfer mode */
+            Dragboard db = imageView.startDragAndDrop(TransferMode.ANY);
 
-            }
+                /* put a string on dragboard */
+            ClipboardContent content = new ClipboardContent();
+            content.putImage(imageView.getImage());
+            db.setContent(content);
+
             event.consume();
         }
 
         @FXML
         void dragDone(DragEvent  event) {
-            Dragboard dragBoard = event.getDragboard();
+           /* the drag-and-drop gesture ended */
+
+                /* if the data was successfully moved, clear it */
+            if (event.getTransferMode() == TransferMode.MOVE) {
+
+            }
+
+            event.consume();
 
         }
 
         @FXML
         void dragDropped( DragEvent event) {
+             /* data dropped */
+                /* if there is a string data on dragboard, read it and use it */
+            Dragboard db = event.getDragboard();
             boolean success = false;
-            Dragboard dragBoard =event.getDragboard();
-            if (dragBoard.hasImage()) {
-                addImage(dragBoard.getImage());
-                event.setDropCompleted(true);
+            if (db.hasUrl()) {
+                imageView.setImage(new Image(db.getUrl()));
+                success = true;
             }
+                /* let the source know whether the string was successfully
+                 * transferred and used */
             event.setDropCompleted(success);
+
             event.consume();
         }
 
         @FXML
         void dragEntered(DragEvent  event) {
 
-            ColorAdjust colorAdjust = new ColorAdjust();
-            colorAdjust.setBrightness(0.5);
-            imageView.setEffect(colorAdjust);
+            /* the drag-and-drop gesture entered the target */
+
+                /* show to the user that it is an actual gesture target */
+            if (event.getGestureSource() != imageView &&
+                    event.getDragboard().hasString()) {
+                ColorAdjust colorAdjust = new ColorAdjust();
+                colorAdjust.setBrightness(0.5);
+                imageView.setEffect(colorAdjust);
+            }
+
+            event.consume();
         }
 
         @FXML
         void dragExited(DragEvent  event) {
+            /* mouse moved away, remove the graphical cues */
             imageView.setEffect(null);
+
+            event.consume();
+
         }
 
         @FXML
         void dragOver(DragEvent  event) {
-            Dragboard dragBoard = event.getDragboard();
-            if (dragBoard.hasImage()) {
+
+            /* data is dragged over the target */
+
+                /* accept it only if it is  not dragged from the same node
+                 * and if it has a string data */
+            if (event.getGestureSource() != imageView &&
+                    event.getDragboard().hasString()) {
+                    /* allow for both copying and moving, whatever user chooses */
                 event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
             }
+
             event.consume();
         }
-    void addImage(Image i){
-        imageView.setImage(i);
-        String nomImage = "blueblue";
-        URL path = getClass().getResource("/Images");
-        File outputFile = new File(path+nomImage);
-        WritableImage image = (WritableImage) i;
-        BufferedImage bImage = SwingFXUtils.fromFXImage(image, null);
-
-        try {
-            ImageIO.write(bImage, "png", outputFile);
-          urlImage = path+nomImage;
-
-            (this.setImageURL(urlImage);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-           }
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 

@@ -18,8 +18,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import modele_TP1.DictionnairePrincipale;
 
+import modele_TP1.Context;
+import modele_TP1.Dictionnaire;
 import modele_TP1.Mot;
 
 
@@ -79,14 +80,17 @@ public class ControleurMoficationFXML implements Initializable, Observer{
 
         Parent root;
         try {
-            root = FXMLLoader.load(getClass().getResource("/vueMenuModifierMot.fxml"));
+            URL url = getClass().getResource("/vueMenuModifierMot.fxml");
+            FXMLLoader fxmlLoader = new FXMLLoader(url);
+            root = fxmlLoader.getRoot();
+            fxmlLoader.getController();
             Stage stage = new Stage();
             stage.setTitle("Modification");
             stage.setScene(new Scene(root));
             stage.show();
 
 
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
