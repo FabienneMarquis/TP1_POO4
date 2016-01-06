@@ -16,6 +16,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -58,40 +59,57 @@ public class ControleurMoficationFXML implements Initializable, Observer{
 
     }
 
+    private Stage popUp;
+
     @FXML
     void lancerVueRecherche(ActionEvent event) {
         System.out.println("Btn Recherche");
+
         Parent root;
-        try {
-            root = FXMLLoader.load(getClass().getResource("/vueMenuSearch.fxml"));
-            Stage stage = new Stage();
-            stage.setTitle("Recherche");
-            stage.setScene(new Scene(root));
-            stage.show();
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
+        if(popUp == null) {
+            popUp = new Stage();
         }
+        if(!popUp.isShowing()){
+
+            try {
+                root = FXMLLoader.load(getClass().getResource("/vueMenuSearch.fxml"));
+                popUp = new Stage();
+                popUp.setTitle("Recherche");
+                popUp.setScene(new Scene(root));
+                popUp.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 
     @FXML
     void modifierMot(ActionEvent event) {
+        if(Context.getInstance().getMotCourant()!=null){
+            if(popUp == null) {
+                popUp = new Stage();
+            }
+            if(!popUp.isShowing()) {
 
-        Parent root;
-        try {
-            URL url = getClass().getResource("/vueMenuModifierMot.fxml");
-            FXMLLoader fxmlLoader = new FXMLLoader(url);
-            root = fxmlLoader.getRoot();
-            fxmlLoader.getController();
-            Stage stage = new Stage();
-            stage.setTitle("Modification");
-            stage.setScene(new Scene(root));
-            stage.show();
+                Parent root;
+                try {
+                    root = FXMLLoader.load(getClass().getResource("/vueMenuModifierMot.fxml"));
+                    popUp.setTitle("Modification");
+                    popUp.setScene(new Scene(root));
+                    popUp.show();
 
 
-        } catch (Exception e) {
-            e.printStackTrace();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Avertissement");
+            alert.setHeaderText("Erreur");
+            alert.setContentText("Pour modifier un mot il faut un mot, non?");
+            alert.showAndWait();
         }
     }
 
@@ -130,15 +148,16 @@ public class ControleurMoficationFXML implements Initializable, Observer{
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-
-
-		
+        Context.getInstance().addObserver(this);
 	}
 
     @Override
     public void update(Observable o, Object arg) {
-        System.out.println(((Mot)arg).getMot());
-        textfielMot.setText(((Mot)arg).getMot());
+        textfielMot.setText(Context.getInstance().getMotCourant().getMot());
+        textAreaDefinition.setText(Context.getInstance().getMotCourant().getDefinition());
+        if(!Context.getInstance().getMotCourant().getImageURL().isEmpty())
+            imageDuMot.setImage(new Image(Context.getInstance().getMotCourant().getImageURL()));
+        else imageDuMot.setImage(null);
     }
 }
 

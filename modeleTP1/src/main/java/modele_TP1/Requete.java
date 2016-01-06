@@ -15,7 +15,7 @@ public class Requete {
     private LocalDate apresCreation;
     private LocalDate avantModification;
     private LocalDate apresModification;
-    private Boolean posedeImage;
+    private boolean posedeImage;
     private List<Mot> resultat;
     private boolean prefix;
     private Dictionnaire dictionnaire;
@@ -28,6 +28,7 @@ public class Requete {
     public Requete(String mot,Dictionnaire dictionnaire) {
         this.mot = mot;
         this.dictionnaire = dictionnaire;
+        this.posedeImage = false;
     }
 
     public Requete(boolean prefix, String mot,Dictionnaire dictionnaire) {

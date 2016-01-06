@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48d711ce-794f-43ab-8242-ee13c3bf154a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\modeleTP1\src\main\java\modele_TP1\Resultat.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\0940135\IdeaProjects\POOIV-TP1\modeleTP1\src\main\java\modele_TP1\DictionnairePrincipale.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Context.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Mot.class" afterPath="$PROJECT_DIR$/../modeleTP1/target/classes/modele_TP1/Mot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java" />
+    <list default="true" id="48d711ce-794f-43ab-8242-ee13c3bf154a" name="Default" comment="Yay recherche is done">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/LocatedImage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controleurTP1/Controleur.class" afterPath="$PROJECT_DIR$/target/classes/controleurTP1/Controleur.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Context.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Context.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" afterPath="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModifierMot.fxml" afterPath="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModifierMot.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="controleurTP1.iws" />
@@ -37,8 +39,8 @@
       <file leaf-file-name="ControleurRechercheFXML.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
+            <state vertical-scroll-proportion="-14.185185">
+              <caret line="127" column="30" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -47,11 +49,48 @@
       <file leaf-file-name="ControleurMoficationFXML.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5625">
-              <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.82236844">
+              <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3702#3703#0" expanded="true" />
+                <element signature="e#3754#3755#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Requete.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControleurModifierMotFXML.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="102" column="100" selection-start-line="102" selection-start-column="100" selection-end-line="102" selection-end-column="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vueMenuModifierMot.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModifierMot.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.172414">
+              <caret line="28" column="91" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,31 +99,21 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
+              <caret line="62" column="51" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageView.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/javafx-src.zip!/javafx/scene/image/ImageView.java">
+      <file leaf-file-name="LocatedImage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/LocatedImage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="190" column="19" selection-start-line="190" selection-start-column="19" selection-end-line="190" selection-end-column="19" />
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding>
-                <element signature="e#5326#5327#0" expanded="true" />
-                <element signature="e#5383#5384#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MotFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -93,14 +122,16 @@
         <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Context.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
               <folding>
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,19 +177,21 @@
         <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModification.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/DictionnaireController.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/DictionnairePrincipale.java" />
-        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java" />
         <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuSearch.fxml" />
         <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/DraggableImage.fxml" />
         <option value="$PROJECT_DIR$/../VueTP1/pom.xml" />
         <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModiferMot.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java" />
-        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Context.java" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/Controleur.java" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" />
+        <option value="$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModifierMot.fxml" />
+        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/LocatedImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java" />
+        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java" />
+        <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Context.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" />
       </list>
     </option>
@@ -631,7 +664,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452107186992</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Context!">
+      <created>1452110183446</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1452110183446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -679,7 +718,8 @@
     <MESSAGE value="Yay lien entre la recherche et l'interface et etabli!" />
     <MESSAGE value="temp" />
     <MESSAGE value="Drag and drop de l'image fonctionnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Drag and drop de l'image fonctionnel" />
+    <MESSAGE value="Context!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Context!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -697,7 +737,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
           <folding>
-            <marker date="1452110125481" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1452116198300" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -723,17 +763,9 @@
         <state vertical-scroll-proportion="0.6875">
           <caret line="371" column="42" selection-start-line="371" selection-start-column="42" selection-end-line="371" selection-end-column="42" />
           <folding>
-            <element signature="e#14089#14090#0" expanded="true" />
-            <element signature="e#14140#14141#0" expanded="true" />
+            <element signature="e#14089#14090#0" expanded="false" />
+            <element signature="e#14140#14141#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/javafx-src.zip!/javafx/scene/image/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2894735">
-          <caret line="154" column="26" selection-start-line="154" selection-start-column="26" selection-end-line="154" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,17 +774,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="190" column="19" selection-start-line="190" selection-start-column="19" selection-end-line="190" selection-end-column="19" />
           <folding>
-            <element signature="e#5326#5327#0" expanded="true" />
-            <element signature="e#5383#5384#0" expanded="true" />
+            <element signature="e#5326#5327#0" expanded="false" />
+            <element signature="e#5383#5384#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,42 +788,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0197368">
-          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/MotFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.20723684">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,12 +804,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java">
+    <entry file="file://$PROJECT_DIR$/../VueTP1/src/main/resources/vueMenuModifierMot.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5625">
-          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
+        <state vertical-scroll-proportion="-8.172414">
+          <caret line="28" column="91" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="51" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/javafx-src.zip!/javafx/scene/image/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.46710527">
+          <caret line="118" column="13" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/LocatedImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Requete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.185185">
+          <caret line="127" column="30" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33223686">
+          <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
+          <folding>
+            <element signature="e#5937#5938#0" expanded="true" />
+            <element signature="e#5967#5968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="100" selection-start-line="102" selection-start-column="100" selection-end-line="102" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82236844">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3702#3703#0" expanded="true" />
+            <element signature="e#3754#3755#0" expanded="true" />
           </folding>
         </state>
       </provider>

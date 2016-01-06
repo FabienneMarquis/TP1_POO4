@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 import modele_TP1.Context;
 import modele_TP1.Mot;
@@ -122,7 +123,9 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 		listeViewResultatRecherche.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Mot>() {
 			@Override
 			public void changed(ObservableValue<? extends Mot> observable, Mot oldValue, Mot newValue) {
-				notifyObservers(newValue);
+				Context.getInstance().setMotCourant(newValue);
+				Stage stage = (Stage)listeViewResultatRecherche.getScene().getWindow();
+				stage.close();
 			}
 		});
 	}

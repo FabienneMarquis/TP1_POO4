@@ -9,6 +9,7 @@ import javafx.scene.effect.ColorAdjust;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.*;
+import modele_TP1.LocatedImage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -59,7 +60,7 @@ public class DraggableImageController implements Initializable{
             Dragboard db = event.getDragboard();
             boolean success = false;
             if (db.hasUrl()) {
-                imageView.setImage(new Image(db.getUrl()));
+                imageView.setImage(new LocatedImage(db.getUrl()));
                 success = true;
             }
                 /* let the source know whether the string was successfully

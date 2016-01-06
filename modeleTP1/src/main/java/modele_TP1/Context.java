@@ -11,7 +11,7 @@ public class Context extends Observable {
     private static Context context;
 
     private Context(){
-
+        System.out.println("creation Context");
     }
 
     public static Context getInstance(){
@@ -30,10 +30,14 @@ public class Context extends Observable {
 
     public void setMotCourant(Mot motCourant){
         this.motCourant = motCourant;
-        notifyObservers();
+        alertObservers();
     }
 
     public Mot getMotCourant(){
         return this.motCourant;
+    }
+    public void alertObservers(){
+        setChanged();
+        notifyObservers();
     }
 }
