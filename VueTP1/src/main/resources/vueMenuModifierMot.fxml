@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="TOP_CENTER" minHeight="400.0" minWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleurTP1.ControleurModifierMotFXML">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0" GridPane.rowIndex="1">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="598.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="166.0" prefWidth="382.0">
+                     <children>
+                        <Pane prefHeight="150.0" prefWidth="150.0" styleClass="borders">
+                           <children>
+                              <fx:include source="DraggableImage.fxml" />
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="75.0" top="10.0" />
+                           </HBox.margin>
+                        </Pane>
+                        <VBox alignment="CENTER" prefHeight="166.0" prefWidth="222.0">
+                           <children>
+                              <Label text="Mot" />
+                              <TextField fx:id="textfielMot" style="-fx-border-insets: 10;">
+                                 <opaqueInsets>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label text="Définition">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="textAreaDefinition" prefHeight="160.0" prefWidth="358.0" style="-fx-padding: 5; -fx-background-insets: 10;" styleClass="borders">
+                     <opaqueInsets>
+                        <Insets bottom="10.0" top="5.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btModifier" mnemonicParsing="false" onAction="#modifierMotConfirmation" text="Modifier le mot ">
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnAnnuler" mnemonicParsing="false" onAction="#annuler" text="Annuler" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Text stroke="#91c2bd" strokeType="OUTSIDE" text="Dictionnaire intéractif" textAlignment="CENTER" wrappingWidth="599.56640625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</GridPane>

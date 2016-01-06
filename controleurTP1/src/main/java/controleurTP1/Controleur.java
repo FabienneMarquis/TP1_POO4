@@ -26,7 +26,6 @@ public class Controleur extends Application implements Initializable{
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
 		launch(args);
 	}
 
@@ -39,7 +38,6 @@ public class Controleur extends Application implements Initializable{
 	 */
 	public void start(Stage primaryStage) throws Exception {
 		String path = "/vueMenuModification.fxml";
-
 		root = FXMLLoader.load(getClass().getResource(
 				path));
 		scene = new Scene(root);

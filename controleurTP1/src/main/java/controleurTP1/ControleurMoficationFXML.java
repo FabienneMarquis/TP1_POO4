@@ -1,8 +1,10 @@
 package controleurTP1;
 import java.io.IOException;
 import java.net.URL;
+
 import java.util.Observable;
 import java.util.Observer;
+
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -17,7 +19,9 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import modele_TP1.DictionnairePrincipale;
+
 import modele_TP1.Mot;
+
 
 public class ControleurMoficationFXML implements Initializable, Observer{
 	@FXML
@@ -47,10 +51,6 @@ public class ControleurMoficationFXML implements Initializable, Observer{
     @FXML
     private TextArea textAreaDefinition;
 
-    @FXML
-    void ajoutImageparDrag(ActionEvent event) {
-
-    }
 
     @FXML
     void ajouterMot(ActionEvent event) {
@@ -77,6 +77,18 @@ public class ControleurMoficationFXML implements Initializable, Observer{
     @FXML
     void modifierMot(ActionEvent event) {
 
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/vueMenuModifierMot.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Modification");
+            stage.setScene(new Scene(root));
+            stage.show();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -87,6 +99,15 @@ public class ControleurMoficationFXML implements Initializable, Observer{
     @FXML
     void supprimerMot(ActionEvent event) {
 
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Avertissement");
+        alert.setHeaderText("Suppression");
+        alert.setContentText("Voulez-vous vraiment supprimer ce mot du dictionnaire?");
+        Optional<ButtonType> result = alert.showAndWait();
+
+        if (result.get() == ButtonType.OK){
+
+        }
     }
 
     @FXML
@@ -105,12 +126,8 @@ public class ControleurMoficationFXML implements Initializable, Observer{
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
-		//btnRecherche.setOnAction(this::rechercheSelonCriteres);
-		btAjouterMot.setOnAction(this::ajouterMot);
-		btModifier.setOnAction(this::modifierMot);
-		btMotduJour.setOnAction(this::motdujourRandom);
-		btRecherche.setOnAction(this::lancerVueRecherche);
+
+
 		
 	}
 
