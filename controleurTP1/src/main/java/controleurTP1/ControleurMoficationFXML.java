@@ -1,6 +1,8 @@
 package controleurTP1;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Observable;
+import java.util.Observer;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -15,8 +17,9 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import modele_TP1.DictionnairePrincipale;
+import modele_TP1.Mot;
 
-public class ControleurMoficationFXML implements Initializable {
+public class ControleurMoficationFXML implements Initializable, Observer{
 	@FXML
     private Button btMotduJour;
 
@@ -111,6 +114,11 @@ public class ControleurMoficationFXML implements Initializable {
 		
 	}
 
-	}
+    @Override
+    public void update(Observable o, Object arg) {
+        System.out.println(((Mot)arg).getMot());
+        textfielMot.setText(((Mot)arg).getMot());
+    }
+}
 
 

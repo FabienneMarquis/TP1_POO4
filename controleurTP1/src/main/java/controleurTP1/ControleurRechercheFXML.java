@@ -7,6 +7,7 @@ import java.util.Observable;
 import java.util.ResourceBundle;
 
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -21,7 +22,7 @@ import modele_TP1.DictionnairePrincipale;
 import modele_TP1.Mot;
 import modele_TP1.Requete;
 
-public class ControleurRechercheFXML implements Initializable {
+public class ControleurRechercheFXML extends Observable implements Initializable{
 
 	@FXML
 	ChoiceBox<String> critereRechercheparDate;
@@ -119,6 +120,12 @@ public class ControleurRechercheFXML implements Initializable {
 		// TODO Auto-generated method stub
 		motOuDefinietionRechercher.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue)->{
 			recherche(true);
+		});
+		listeViewResultatRecherche.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Mot>() {
+			@Override
+			public void changed(ObservableValue<? extends Mot> observable, Mot oldValue, Mot newValue) {
+				notifyObservers(newValue);
+			}
 		});
 	}
 

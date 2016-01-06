@@ -1,5 +1,7 @@
 package modele_TP1;
 
+import javafx.scene.image.Image;
+
 import java.time.LocalDate;
 
 public class Mot {
