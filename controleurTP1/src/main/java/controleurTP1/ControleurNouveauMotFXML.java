@@ -60,8 +60,9 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
             alert.setTitle("Avertissement");
             alert.setHeaderText("Erreur");
             alert.setContentText("Il n'y a aucun mot à ajouter.");
-        } else if(sauvegarde()) {
-
+        } else if(Context.getInstance().sauvegarder(textfielMot.getText(),
+                ((LocatedImage)imageDuMot.getImage())!=null?((LocatedImage)imageDuMot.getImage()).getURL():"", textAreaDefinition.getText())) {
+             Context.getInstance().getDictionnaire().sortByMot();
             ((Stage) btNouveauMot.getScene().getWindow()).close();
         }
         else {
@@ -73,34 +74,9 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
         }
     }
 
-    private boolean sauvegarde(){
-            Requete requete = new Requete(textfielMot.getText(),Context.getInstance().getDictionnaire());
-            requete.recherche();
-            if(requete.getResultat().size()>0){
-                return false;
-            }
-
-
-        if(imageDuMot.getImage()!=null){
-            Mot mot = new Mot(textfielMot.getText(),textAreaDefinition.getText(),((LocatedImage)imageDuMot.getImage()).getURL());
-            Context.getInstance().getDictionnaire().getMots().add(mot);
-            Context.getInstance().setMotCourant(mot);
-            Context.getInstance().getDictionnaire().sortByMot();
-        }
-
-        else{
-            Mot mot = new Mot(textfielMot.getText(),textAreaDefinition.getText(),"");
-            Context.getInstance().getDictionnaire().getMots().add(mot);
-            Context.getInstance().setMotCourant(mot);
-            Context.getInstance().getDictionnaire().sortByMot();
-        }
-        Context.getInstance().alertObservers();
-        return true;
-    }
 
     @Override
     public void update(Observable o, Object arg) {
-        System.out.println(((Mot)arg).getMot());
         textfielMot.setText(((Mot)arg).getMot());
     }
 

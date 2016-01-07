@@ -2,6 +2,7 @@ package controleurTP1;
 
 import java.net.URL;
 import java.util.Observable;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 import javafx.application.Platform;
@@ -45,6 +46,9 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 	private Button btnRecherche;
 
 	@FXML
+	private Button btnAnnuler;
+
+	@FXML
 	private CheckBox checkBoxImage;
 
 	@FXML
@@ -64,6 +68,20 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 
 	private ObservableList<Mot> observableList = FXCollections
 			.synchronizedObservableList(FXCollections.observableArrayList());
+
+	@FXML
+	void annulerRecherche(ActionEvent event) {
+		Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+		alert.setTitle("Avertissement");
+		alert.setHeaderText("Quitter?");
+		alert.setContentText("Voulez-vous quitter la recherche de mot?");
+		Optional<ButtonType> result = alert.showAndWait();
+
+		if (result.get() == ButtonType.OK){
+			((Stage)btnAnnuler.getScene().getWindow()).close();
+		}
+	}
+
 	@FXML
 	void rechercheSelonCriteres(ActionEvent event) {
 		if (motOuDefinietionRechercher.getText().isEmpty()) {

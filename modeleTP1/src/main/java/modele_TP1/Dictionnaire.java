@@ -62,6 +62,25 @@ public class Dictionnaire {
         isSortedByDateOfCreation = false;
     }
 
+    public void addMot(Mot mot){
+        mots.add(mot);
+        isSortedByMot = false;
+        isSortedByDateOfCreation = false;
+        isSortedByDateOfModification = false;
+        isSortedByImage = false;
+
+    }
+    public void supprimerMot(Mot mot){
+        mots.remove(mot);
+        isSortedByMot = false;
+        isSortedByDateOfCreation = false;
+        isSortedByDateOfModification = false;
+        isSortedByImage = false;
+
+    }
+
+
+
     public boolean isSortedByMot() {
         return isSortedByMot;
     }
