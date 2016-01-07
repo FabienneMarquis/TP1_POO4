@@ -2,11 +2,7 @@ package controleurTP1;
 import java.io.IOException;
 import java.net.URL;
 
-import java.util.Observable;
-import java.util.Observer;
-
-import java.util.Optional;
-import java.util.ResourceBundle;
+import java.util.*;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -53,13 +49,34 @@ public class ControleurMoficationFXML implements Initializable, Observer{
     @FXML
     private TextArea textAreaDefinition;
 
+    private Random random = new Random();
+
+    private Stage popUp;
 
     @FXML
     void ajouterMot(ActionEvent event) {
+        Parent root;
+        Parent root;
+        if(popUp == null) {
+            popUp = new Stage();
+        }
+        if(!popUp.isShowing()){
 
+            try {
+
+            root = FXMLLoader.load(getClass().getResource("/vueMenuNouveauMot.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Nouveau Mot");
+            stage.setScene(new Scene(root));
+            stage.show();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    private Stage popUp;
+
 
     @FXML
     void lancerVueRecherche(ActionEvent event) {
@@ -115,7 +132,16 @@ public class ControleurMoficationFXML implements Initializable, Observer{
 
     @FXML
     void motdujourRandom(ActionEvent event) {
+        int index = random.nextInt(Context.getInstance().getDictionnaire().getMots().size()-1);
+        System.out.println("\nIndex :" + index );
+        Mot mot = Context.getInstance().getDictionnaire().getMots().get(index);
 
+        if (mot.getImageURL()!=""){
+            imageDuMot.setImage( new Image(mot.getImageURL()));}
+
+        textfielMot.setText(mot.getMot());
+
+        textAreaDefinition.setText(mot.getDefinition());
     }
 
     @FXML
