@@ -1,6 +1,8 @@
 package controleurTP1;
 
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,11 +10,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import modele_TP1.Context;
-import modele_TP1.Dictionnaire;
-import modele_TP1.Mot;
+import modele_TP1.*;
 
 import java.io.IOException;
 import java.net.URL;
@@ -23,23 +24,12 @@ import java.util.ResourceBundle;
 
 
 public class ControleurNouveauMotFXML implements Initializable, Observer{
-	@FXML
-    private Button btMotduJour;
 
     @FXML
-    private Button btAjouterMot;
+    private Button btNouveauMot;
 
     @FXML
-    private Button btModifier;
-
-    @FXML
-    private Button btSupprimer;
-
-    @FXML
-    private Button btRecherche;
-
-    @FXML
-    private Button btnQuitter;
+    private Button btnAnnuler;
 
     @FXML
     private ImageView imageDuMot;
@@ -50,9 +40,6 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
     @FXML
     private TextArea textAreaDefinition;
 
-    private Dictionnaire dictionnaire;
-    private Mot mot;
-
     @FXML
     void annuler(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -62,7 +49,7 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
         Optional<ButtonType> result = alert.showAndWait();
 
         if (result.get() == ButtonType.OK){
-
+            ((Stage)btnAnnuler.getScene().getWindow()).close();
         }
     }
 
@@ -73,18 +60,42 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
             alert.setTitle("Avertissement");
             alert.setHeaderText("Erreur");
             alert.setContentText("Il n'y a aucun mot à ajouter.");
-        }else {
-            if (imageDuMot.getImage().isError()&&textAreaDefinition.getText().isEmpty()){
-                mot.setMot(textfielMot.getText());
+        } else if(sauvegarde()) {
 
-            }else if(textAreaDefinition.getText().isEmpty()) {
-                mot.setMot(textfielMot.getText());
-                //mot.setImageURL(imageDuMot.getImage().);
-            } else if (imageDuMot.getImage().isError()){
-                mot.setMot(textfielMot.getText());
-                mot.setDefinition(textAreaDefinition.getText());
-            }
+            ((Stage) btNouveauMot.getScene().getWindow()).close();
         }
+        else {
+            Alert alertErreur = new Alert(Alert.AlertType.ERROR);
+            alertErreur.setTitle("ERREUR!");
+            alertErreur.setHeaderText("ERREUR!");
+            alertErreur.setContentText("Mot deja existant");
+            alertErreur.showAndWait();
+        }
+    }
+
+    private boolean sauvegarde(){
+            Requete requete = new Requete(textfielMot.getText(),Context.getInstance().getDictionnaire());
+            requete.recherche();
+            if(requete.getResultat().size()>0){
+                return false;
+            }
+
+
+        if(imageDuMot.getImage()!=null){
+            Mot mot = new Mot(textfielMot.getText(),textAreaDefinition.getText(),((LocatedImage)imageDuMot.getImage()).getURL());
+            Context.getInstance().getDictionnaire().getMots().add(mot);
+            Context.getInstance().setMotCourant(mot);
+            Context.getInstance().getDictionnaire().sortByMot();
+        }
+
+        else{
+            Mot mot = new Mot(textfielMot.getText(),textAreaDefinition.getText(),"");
+            Context.getInstance().getDictionnaire().getMots().add(mot);
+            Context.getInstance().setMotCourant(mot);
+            Context.getInstance().getDictionnaire().sortByMot();
+        }
+        Context.getInstance().alertObservers();
+        return true;
     }
 
     @Override
@@ -95,7 +106,8 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        dictionnaire = Context.getInstance().getDictionnaire();
+        imageDuMot.setPreserveRatio(true);
+        imageDuMot.setFitWidth(150);
     }
 }
 
