@@ -34,6 +34,13 @@ public class Mot {
 		imageURL = "";
 	}
 
+	public Mot(String mot, String definition, String urlImage){
+		setMot(mot);
+		setDefinition(definition);
+		setCreatedAt();
+		setUpdatedAt();
+		imageURL = urlImage;
+	}
 
 
 	public String getMot() {
