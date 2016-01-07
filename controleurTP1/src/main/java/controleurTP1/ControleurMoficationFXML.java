@@ -55,7 +55,7 @@ public class ControleurMoficationFXML implements Initializable, Observer{
 
     @FXML
     void ajouterMot(ActionEvent event) {
-        Parent root;
+
         Parent root;
         if(popUp == null) {
             popUp = new Stage();
@@ -75,31 +75,32 @@ public class ControleurMoficationFXML implements Initializable, Observer{
             e.printStackTrace();
         }
     }
+    }
 
 
 
     @FXML
-    void lancerVueRecherche(ActionEvent event) {
-        System.out.println("Btn Recherche");
+    void lancerVueRecherche(ActionEvent event){
+            System.out.println("Btn Recherche");
 
-        Parent root;
-        if(popUp == null) {
-            popUp = new Stage();
-        }
-        if(!popUp.isShowing()){
-
-            try {
-                root = FXMLLoader.load(getClass().getResource("/vueMenuSearch.fxml"));
+            Parent root;
+            if (popUp == null) {
                 popUp = new Stage();
-                popUp.setTitle("Recherche");
-                popUp.setScene(new Scene(root));
-                popUp.show();
-            } catch (IOException e) {
-                e.printStackTrace();
+            }
+            if (!popUp.isShowing()) {
+
+                try {
+                    root = FXMLLoader.load(getClass().getResource("/vueMenuSearch.fxml"));
+                    popUp = new Stage();
+                    popUp.setTitle("Recherche");
+                    popUp.setScene(new Scene(root));
+                    popUp.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 
-    }
 
     @FXML
     void modifierMot(ActionEvent event) {
@@ -186,5 +187,6 @@ public class ControleurMoficationFXML implements Initializable, Observer{
         else imageDuMot.setImage(null);
     }
 }
+
 
 
