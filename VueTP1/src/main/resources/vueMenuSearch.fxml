@@ -86,7 +86,16 @@
                   <TextField fx:id="motOuDefinietionRechercher" alignment="CENTER" prefHeight="31.0" prefWidth="164.0" />
                </children>
             </HBox>
-            <Button fx:id="btnRecherche" mnemonicParsing="false" onAction="#rechercheSelonCriteres" text="Recherche" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnRecherche" mnemonicParsing="false" onAction="#rechercheSelonCriteres" text="Recherche" />
+                  <Button fx:id="btnAnnuler" mnemonicParsing="false" onAction="#annulerRecherche" text="Annuler">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
       </VBox>
       <VBox alignment="CENTER" prefHeight="368.0" prefWidth="344.0" GridPane.rowIndex="2">
