@@ -8,25 +8,12 @@ public class Mot {
 
 	private String mot,definition,imageURL;
 	private LocalDate createdAt,updatedAt;
-	
-	// simpleton création d'un mots
 
-	/*
-	 * création de Mot
-	 * 
-	 * un mot (1 seul mot) • une définition (max 20 mots configurables par
-	 * propriétés) • le nom d’un fichier contenant une image (en format jpeg)
-	 * qui est associée à la définition (peut être null)• la date de saisie du
-	 * mot (allez voir la classe LocaleDate) • la date de la dernière
-	 * modification (LocaleDate aussi)
-	 */
-
-	/*
-	 * La fabrique doit avoir une méthode pour créer les ~300 000 mots contenus
-	 * dans le fichier qui vous a été fourni avec le travail. La date est saisie
-	 * sur le moment. La définition et l’image sont vides par défaut.
-	 */
-
+	/**
+	 * Constructeur de l'objet Mot avec un seul parametre
+	 * @param mot String
+	 * @throws IllegalArgumentException
+     */
 	public Mot(String mot) throws IllegalArgumentException{
 		setMot(mot);
 		setCreatedAt();
@@ -34,6 +21,12 @@ public class Mot {
 		imageURL = "";
 	}
 
+	/**
+	 * Constructeur de l'objet Mot avec trois paramètres
+	 * @param mot le mot
+	 * @param definition la définition du mot
+	 * @param urlImage la source de l'image (String de l'URL)
+     */
 	public Mot(String mot, String definition, String urlImage){
 		setMot(mot);
 		setDefinition(definition);
@@ -42,11 +35,20 @@ public class Mot {
 		imageURL = urlImage;
 	}
 
+	/**
+	 * Methode qui retourne un mot
+	 * @return mot
+     */
 
 	public String getMot() {
 		return mot;
 	}
 
+	/**
+	 * methode qui vérifier que le mot que l'on veut ajouter n'ait qu'un seul mot
+	 * @param mot
+	 * @throws IllegalArgumentException
+     */
 	public void setMot(String mot) throws IllegalArgumentException {
 		if(mot.split(" ").length > 1)
 			throw new IllegalArgumentException("INVALID: More than one word in a word");
@@ -56,22 +58,42 @@ public class Mot {
 		this.mot = mot;
 	}
 
+	/**
+	 * methode qui retourne la définition associé à un mot
+	 * @return definition
+     */
 	public String getDefinition() {
 		return definition;
 	}
 
+	/**
+	 *méthode qui permet de déterminier la définition d'un mot
+	 * @param definition
+     */
 	public void setDefinition(String definition) {
 		this.definition = definition;
 	}
 
+	/**
+	 * Méthode qui renvoit l'URL en String de l'image associé à un mot
+	 * @return
+     */
 	public String getImageURL() {
 		return imageURL;
 	}
 
+	/**
+	 * Méthode qui permet d'associé l'URL en String d'une image à un mot (changer ou ajouter)
+	 * @param imageURL
+     */
 	public void setImageURL(String imageURL) {
 		this.imageURL = imageURL;
 	}
 
+	/**
+	 * Méthode qui permet de connaitre la date de création du mot
+	 * @return
+     */
 	public LocalDate getCreatedAt() {
 		return createdAt;
 	}
@@ -80,26 +102,19 @@ public class Mot {
 		this.createdAt = LocalDate.now();
 	}
 
+	/**
+	 * Méthode qui permet de connaitre la date de modification
+	 * @return
+     */
 	public LocalDate getUpdatedAt() {
 		return updatedAt;
 	}
 
-	private void setUpdatedAt() {
+	/**
+	 * Méthode qui permet d'ajouter une date de modification à un mot
+	 */
+	public void setUpdatedAt() {
 		this.updatedAt = LocalDate.now();
 	}
 
-
-	public static void main(String[] args) {
-		Mot mot = null;
-		try {
-			mot = new Mot("derp");
-		}catch (IllegalArgumentException e){
-			e.printStackTrace();
-		}
-		System.out.println(mot.toString());
-		System.out.println(mot.getMot());
-		System.out.println(mot.getCreatedAt());
-		System.out.println(mot.getUpdatedAt());
-		System.out.println(mot.getDefinition());
-	}
 }

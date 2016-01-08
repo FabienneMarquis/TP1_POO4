@@ -69,6 +69,11 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 	private ObservableList<Mot> observableList = FXCollections
 			.synchronizedObservableList(FXCollections.observableArrayList());
 
+	/**
+	 * lorsque l'utilisateur appuit sur le bouton annuler il enclanche cet méthode qui demande la confirmation avant
+	 * de fermer ou non la fenêtre
+	 * @param event
+     */
 	@FXML
 	void annulerRecherche(ActionEvent event) {
 		Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -132,6 +137,12 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 		statDeRecherche.setText("Resultats: "+requete.getResultat().size()+ " Temps: " + requete.getRechercheTime());
 	}
 
+	/**
+	 * Cette méthode est utilisé pour s'assurer que le mots choisi est tranférer à la fenêtre de base (avec le motCourant
+	 * et que la recherche soit dynamique.
+	 * @param location
+	 * @param resources
+     */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

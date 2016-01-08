@@ -12,7 +12,7 @@ import java.awt.*;
 import java.util.Observable;
 
 /**
- * Created by 0940135 on 2016-01-04.
+ * Created by Gabriel et Fabienne on 2016-01-04.
  */
 public class Context extends Observable {
     private Dictionnaire dictionnaire;
@@ -23,25 +23,47 @@ public class Context extends Observable {
         System.out.println("creation Context");
     }
 
+    /**
+     *retour le la classe Context  qui renvoit le dictionnaire(liste de mot) et le mot Courant
+     * @return context
+     */
     public static Context getInstance(){
         if(context==null)
             context = new Context();
         return context;
     }
 
+    /**
+     * Retourne le dictionnaire (liste de mots)
+     * @return dictionnaire
+     */
     public Dictionnaire getDictionnaire() {
         return this.dictionnaire;
     }
 
+    /**
+     * Permets d'ajouter le dictionnaire créer dans la Classe dictionnaire à la classe context qui est observer par
+     * les contrôleurs
+     * @param dictionnaire
+     */
     public void setDictionnaire(Dictionnaire dictionnaire) {
         this.dictionnaire = dictionnaire;
     }
 
+    /**
+     * Permets d'ajouter le mot qui a été choisi soi lors de la recherche ou du mot du jour (random)
+     * à la classe context qui est observer pa les contrôleurs
+     * @param motCourant
+     */
     public void setMotCourant(Mot motCourant){
         this.motCourant = motCourant;
         alertObservers();
     }
 
+    /**
+     * Renvoit le Mot qui a été placer à la position mot Courant
+     * @return
+     */
     public Mot getMotCourant(){
         return this.motCourant;
     }
@@ -50,6 +72,13 @@ public class Context extends Observable {
         notifyObservers();
     }
 
+    /**
+     * Permets la sauvegarde d'un nouveau mot grâce au paramettre envoyer
+     * @param textfielMot nouveau mot
+     * @param imageDuMot image du nouveau mot (string de URL)
+     * @param textAreaDefinition
+     * @return
+     */
     public boolean sauvegarder(String textfielMot, String imageDuMot, String textAreaDefinition){
         System.out.print(textfielMot);
         Requete requete = new Requete(textfielMot,Context.getInstance().getDictionnaire());
@@ -74,6 +103,14 @@ public class Context extends Observable {
         Context.getInstance().alertObservers();
         return true;
     }
+
+    /**
+     *Permet la modification d'un mots selon les parametres suivant
+     * @param textfielMot Mot
+     * @param imageDuMot nouvelle image ou non du mots (String de l'URL)
+     * @param textAreaDefinition
+     * @return
+     */
     public boolean modifierMot( String textfielMot, String imageDuMot, String textAreaDefinition){
         if(textfielMot.compareTo(Context.getInstance().getMotCourant().getMot())!=0){
             Requete requete = new Requete(textfielMot,Context.getInstance().getDictionnaire());
@@ -84,6 +121,7 @@ public class Context extends Observable {
         }
         Context.getInstance().getMotCourant().setMot(textfielMot);
         Context.getInstance().getMotCourant().setDefinition(textAreaDefinition);
+        Context.getInstance().getMotCourant().setUpdatedAt();
         if(!imageDuMot.isEmpty())
             Context.getInstance().getMotCourant().setImageURL(imageDuMot);
 

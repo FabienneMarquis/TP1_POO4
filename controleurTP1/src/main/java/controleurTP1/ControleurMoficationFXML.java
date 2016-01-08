@@ -182,6 +182,12 @@ public class ControleurMoficationFXML implements Initializable, Observer{
         Context.getInstance().addObserver(this);
 	}
 
+    /**
+     * Méthode qui permet de lien le contrôleur (observateur) à la classe Context qui est observer
+     * permet le lien entre les contrôleurs
+     * @param o
+     * @param arg
+     */
     @Override
     public void update(Observable o, Object arg) {
         textfielMot.setText(Context.getInstance().getMotCourant().getMot());

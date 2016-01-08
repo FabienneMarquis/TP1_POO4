@@ -87,6 +87,12 @@ public class ControleurModifierMotFXML implements Initializable {
         }
     }
 
+    /**
+     * Cette méthode est utilisé pour s'assurer que le mots choisi est tranférer à la fenêtre modifier mot puis
+     * que l'image respecte le cadre
+     * @param location
+     * @param resources
+     */
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

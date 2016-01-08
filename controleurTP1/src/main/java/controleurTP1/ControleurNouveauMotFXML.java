@@ -1,4 +1,8 @@
+
 package controleurTP1;
+/**
+ * @author Fabienne et Gabriel
+ */
 
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -39,7 +43,11 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
 
     @FXML
     private TextArea textAreaDefinition;
-
+    /**
+     * lorsque l'utilisateur appuit sur le bouton annuler il enclanche cet méthode qui demande la confirmation avant
+     * de fermer ou non la fenêtre
+     * @param event
+     */
     @FXML
     void annuler(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -53,6 +61,11 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
         }
     }
 
+    /**
+     * lorsque l'utilisateur appuit sur le bouton ajouter, cette méthdoe test si il y a un mot d'entrer dans le champs
+     * d'entré mot ou si le mot existe déjà ou non dans le dictionnaire.
+      * @param event
+     */
     @FXML
     void creerNouveauMot(ActionEvent event) {
         if(textfielMot.getText().isEmpty()){
@@ -79,7 +92,11 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
     public void update(Observable o, Object arg) {
         textfielMot.setText(((Mot)arg).getMot());
     }
-
+    /**
+     * Cette méthode est utilisé pour s'assurer que l'image respecte le cadre
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         imageDuMot.setPreserveRatio(true);

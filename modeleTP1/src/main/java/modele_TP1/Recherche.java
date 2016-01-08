@@ -18,7 +18,11 @@ public class Recherche {
 
     }
 
-	//méthode de recherche selon le texte du mot
+    /**
+     * Méthode qui fait une recherche binaire de la position d'une mot selon
+     * @param recherche
+     * @return
+     */
     private int recherchePosMot(String recherche){
         int pos;
         dictionnaire.sortByMot();
@@ -44,6 +48,11 @@ public class Recherche {
         return middle;
     }
 
+    /**
+     * Méthode qui fait une recherche par le mot
+     * @param recherche
+     * @return
+     */
     public Mot rechercheMot(String recherche){
         int pos = recherchePosMot(recherche);
         Mot mot;
@@ -56,6 +65,11 @@ public class Recherche {
         return null;
     }
 
+    /**
+     *Méthode qui fait une recherche par préfix
+     * @param prefix
+     * @return
+     */
     public List<Mot> rechercheMotParPrefix(String prefix){
         List<Mot> mots = new ArrayList<>();
 
@@ -77,6 +91,11 @@ public class Recherche {
         return mots;
     }
 
+    /**
+     * Méthode qui fait une recherche par après la date de création
+     * @param date
+     * @return
+     */
     public List<Mot> rechercheApresDateCreation(LocalDate date){
 
         List<Mot> mots = new ArrayList<>();
@@ -95,6 +114,11 @@ public class Recherche {
         return mots;
     }
 
+    /**
+     * Méthode qui fait une recherche par avant la date de création
+     * @param date
+     * @return
+     */
     public List<Mot> rechercheAvantDateCreation(LocalDate date){
         List<Mot> mots = new ArrayList<>();
 
@@ -112,6 +136,11 @@ public class Recherche {
         return mots;
     }
 
+    /**
+     * Méthode qui fait une recherche par après la date de modification
+     * @param date
+     * @return
+     */
     public List<Mot> rechercheApresDateModification(LocalDate date){
         List<Mot> mots = new ArrayList<>();
 
@@ -129,6 +158,11 @@ public class Recherche {
         return mots;
     }
 
+    /**
+     * Méthode qui fait une recherche par avant la date de modification
+     * @param date
+     * @return
+     */
     public List<Mot> rechercheAvantDateModification(LocalDate date){
         List<Mot> mots = new ArrayList<>();
 
@@ -146,6 +180,11 @@ public class Recherche {
         return mots;
     }
 
+    /**
+     *  Méthode qui fait une recherche par la date de création
+     * @param date
+     * @return
+     */
     private int rechercheParDateDeCreation(LocalDate date){
 
         int pos;
@@ -172,6 +211,10 @@ public class Recherche {
         return middle;
     }
 
+    /**
+     * Méthode qui fait une recherche par la date de modification
+     * @return
+     */
     private int rechercheParDateDeModification(LocalDate date){
         dictionnaire.sortByDateOfModification();
 
@@ -198,6 +241,11 @@ public class Recherche {
         return middle;
     }
 
+    /**
+     * Méthode qui fait une recherche pour un mots avec une image
+     * @param image
+     * @return
+     */
     public List<Mot> rechercheMotAvecImage(boolean image){
         dictionnaire.sortByImage();
 
@@ -222,6 +270,11 @@ public class Recherche {
         return mots;
     }
 
+    /**
+     * Méthode qui fait une recherche contenant les lettres
+     * @param lettres
+     * @return
+     */
     public List<Mot> rechercheMotContenant(String lettres){
         List<Mot> out = new ArrayList<>();
         dictionnaire.getMots().forEach((Mot mot)->{
@@ -231,6 +284,10 @@ public class Recherche {
         return out;
     }
 
+    /**
+     * permet de créer une expression régulière pour être utiliser lors d'une recherche par wildcard
+     * @return
+     */
     private String getRegexFromWildCardString(String wildcard){
         String regex = "";
         for(char c : wildcard.toCharArray()){
@@ -242,6 +299,12 @@ public class Recherche {
         }
         return regex;
     }
+
+    /**
+     *Méthode qui fait une recherche avec un regex
+     * @param regex
+     * @return
+     */
     private List<Mot> rechercheMotParRegex(String regex){
 
         Pattern p = Pattern.compile(regex);
@@ -256,73 +319,16 @@ public class Recherche {
         });
         return out;
     }
+
+    /**
+     * Méthode qui fait une recherche avec une wildcard
+     * @param wildcard
+     * @return
+     */
     public List<Mot> rechercheMotAvecWildcards(String wildcard){
 
         String regex = getRegexFromWildCardString(wildcard);
         return rechercheMotParRegex(regex);
-    }
-
-    public static void main(String[] args) {
-        MotFactory motFactory = MotFactory.getInstance();
-        Dictionnaire dictionnaire = new Dictionnaire(motFactory.getMots());
-        Recherche recherche = new Recherche(dictionnaire);
-        long startTime;
-        long stopTime;
-//        long startTime = System.currentTimeMillis();
-//        Mot mot = recherche.rechercheMot("a");
-//        long stopTime = System.currentTimeMillis();
-//
-//
-//        System.out.println(mot.getMot());
-//        System.out.println("time for recherche: "+(stopTime-startTime)+"ms");
-//
-//        startTime = System.currentTimeMillis();
-//        List<Mot> mots = recherche.rechercheMotParPrefix("ab");
-//        stopTime = System.currentTimeMillis();
-//        for(Mot mot1: mots){
-//            System.out.println(mot1.getMot()+"-"+mot1.getCreatedAt());
-//        }
-//        System.out.println("time for recherche: "+(stopTime-startTime)+"ms");
-
-//        startTime = System.currentTimeMillis();
-//        List<Mot> motsParDateCreation = recherche.rechercheApresDateCreation(LocalDate.of(2015,12,31));
-//        stopTime = System.currentTimeMillis();
-//        int i = 0;
-//        for(Mot mot1: motsParDateCreation){
-//            i++;
-//            System.out.println(mot1.getMot() + "-" + mot1.getCreatedAt());
-//        }
-//        System.out.println("time for recherche: "+(stopTime-startTime)+"ms #result: "+i);
-//
-//        startTime = System.currentTimeMillis();
-//        List<Mot> mots = recherche.rechercheMotAvecImage(true);
-//        stopTime = System.currentTimeMillis();
-//        int i = 0;
-//        for(Mot mot: mots){
-//            i++;
-//            System.out.println(mot.getMot() + "-" + mot.getCreatedAt());
-//        }
-//        System.out.println("time for recherche: "+(stopTime-startTime)+"ms #result: "+i);
-
-////
-//        startTime = System.currentTimeMillis();
-//        List<Mot> mots = recherche.rechercheMotContenant("sa");
-//        stopTime = System.currentTimeMillis();
-//        int i = 0;
-//        for(Mot mot: mots){
-//            i++;
-//            System.out.println(mot.getMot() + "-" + mot.getCreatedAt());
-//        }
-//        System.out.println("time for recherche: "+(stopTime-startTime)+"ms #result: "+i);
-        startTime = System.currentTimeMillis();
-        List<Mot> mots = recherche.rechercheMotAvecWildcards("avion");
-        stopTime = System.currentTimeMillis();
-        int i = 0;
-        for(Mot mot1: mots){
-            i++;
-            System.out.println(mot1.getMot()+"-"+mot1.getCreatedAt());
-        }
-        System.out.println("time for recherche: "+(stopTime-startTime)+"ms #result: "+i);
     }
 
 
