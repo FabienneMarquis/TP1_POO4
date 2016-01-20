@@ -137,10 +137,6 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 		statDeRecherche.setText("Resultats: " + requete.getResultat().size() + " Temps: " + requete.getRechercheTime());
 	}
 
-	@FXML
-	void annulerRecherche(ActionEvent event){
-
-	}
 
 	/**
 	 * Cette méthode est utilisé pour s'assurer que le mots choisi est tranférer à la fenêtre de base (avec le motCourant

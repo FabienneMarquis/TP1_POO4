@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48d711ce-794f-43ab-8242-ee13c3bf154a" name="Default" comment="Alot of stuff done: Modification du mot fait.&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java" />
+    <list default="true" id="48d711ce-794f-43ab-8242-ee13c3bf154a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java" afterPath="$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="controleurTP1.iws" />
@@ -34,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+              <caret line="84" column="42" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -44,8 +42,11 @@
         <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="315" column="54" selection-start-line="315" selection-start-column="54" selection-end-line="315" selection-end-column="54" />
-              <folding />
+              <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+              <folding>
+                <element signature="e#244#245#0" expanded="false" />
+                <element signature="e#292#293#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,22 +101,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DraggableImageController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DraggableImageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49671054">
-              <caret line="66" column="75" selection-start-line="66" selection-start-column="75" selection-end-line="66" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControleurRechercheFXML.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ControleurRechercheFXML.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
-              <folding />
+            <state vertical-scroll-proportion="0.6875">
+              <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
+              <folding>
+                <element signature="e#2653#2654#0" expanded="true" />
+                <element signature="e#2675#2676#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,9 +167,9 @@
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Context.java" />
         <option value="$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Mot.java" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurMoficationFXML.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java" />
       </list>
     </option>
   </component>
@@ -678,7 +682,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452116290014</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Drag and dropped marche avec les fichiers aussi maintenant&#10;">
+      <created>1453332589406</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1453332589406</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -693,7 +703,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.4937107" order="0" side_tool="false" content_ui="combo" />
@@ -728,7 +738,8 @@
     <MESSAGE value="Drag and drop de l'image fonctionnel" />
     <MESSAGE value="Context!" />
     <MESSAGE value="Alot of stuff done: Modification du mot fait.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alot of stuff done: Modification du mot fait.&#10;" />
+    <MESSAGE value="Drag and dropped marche avec les fichiers aussi maintenant&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Drag and dropped marche avec les fichiers aussi maintenant&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1017,7 +1028,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurModifierMotFXML.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+          <caret line="84" column="42" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1025,8 +1036,11 @@
     <entry file="file://$PROJECT_DIR$/../modeleTP1/src/main/java/modele_TP1/Recherche.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="315" column="54" selection-start-line="315" selection-start-column="54" selection-end-line="315" selection-end-column="54" />
-          <folding />
+          <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding>
+            <element signature="e#244#245#0" expanded="false" />
+            <element signature="e#292#293#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,19 +1126,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/DraggableImageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleurTP1/ControleurRechercheFXML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49671054">
-          <caret line="66" column="75" selection-start-line="66" selection-start-column="75" selection-end-line="66" selection-end-column="75" />
-          <folding />
+        <state vertical-scroll-proportion="0.6875">
+          <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
+          <folding>
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2675#2676#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
