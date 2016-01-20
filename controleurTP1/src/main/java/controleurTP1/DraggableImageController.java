@@ -1,7 +1,7 @@
 package controleurTP1;
 
 /**
- * Created by fabienne on 2016-01-05.
+ * Created by fabienne et Gabriel on 2016-01-05.
  */
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

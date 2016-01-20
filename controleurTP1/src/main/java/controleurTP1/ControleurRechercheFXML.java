@@ -2,6 +2,7 @@ package controleurTP1;
 
 import java.net.URL;
 import java.util.Observable;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 import javafx.application.Platform;
@@ -45,6 +46,9 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 	private Button btnRecherche;
 
 	@FXML
+	private Button btnAnnuler;
+
+	@FXML
 	private CheckBox checkBoxImage;
 
 	@FXML
@@ -64,6 +68,25 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 
 	private ObservableList<Mot> observableList = FXCollections
 			.synchronizedObservableList(FXCollections.observableArrayList());
+
+	/**
+	 * lorsque l'utilisateur appuit sur le bouton annuler il enclanche cet méthode qui demande la confirmation avant
+	 * de fermer ou non la fenêtre
+	 * @param event
+     */
+	@FXML
+	void annulerRecherche(ActionEvent event) {
+		Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+		alert.setTitle("Avertissement");
+		alert.setHeaderText("Quitter?");
+		alert.setContentText("Voulez-vous quitter la recherche de mot?");
+		Optional<ButtonType> result = alert.showAndWait();
+
+		if (result.get() == ButtonType.OK){
+			((Stage)btnAnnuler.getScene().getWindow()).close();
+		}
+	}
+
 	@FXML
 	void rechercheSelonCriteres(ActionEvent event) {
 		if (motOuDefinietionRechercher.getText().isEmpty()) {
@@ -119,6 +142,12 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 
 	}
 
+	/**
+	 * Cette méthode est utilisé pour s'assurer que le mots choisi est tranférer à la fenêtre de base (avec le motCourant
+	 * et que la recherche soit dynamique.
+	 * @param location
+	 * @param resources
+     */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

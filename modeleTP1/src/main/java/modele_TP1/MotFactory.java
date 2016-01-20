@@ -21,6 +21,7 @@ public class MotFactory {
     private static MotFactory motFactory;
 
     private Path path;
+
     private MotFactory(){
 
         URL url = getClass().getResource("../liste.de.mots.francais.frgut.utf8.txt");
@@ -37,6 +38,10 @@ public class MotFactory {
 
     }
 
+    /**
+     * permet de renvoyer ou de créer le MotFactory
+     * @return
+     */
     public static MotFactory getInstance(){
         if(motFactory==null){
             motFactory = new MotFactory();
@@ -44,6 +49,10 @@ public class MotFactory {
         return motFactory;
     }
 
+    /**
+     *Cette méthode renvoit le dictionnaire (liste de Mots) créer avec les fabriques de mot de cette classe
+     * @return dictionnaire (List<Mot>)
+     */
     public List<Mot> getMots(){
 
         List<Mot> dictionnaire = new ArrayList<>();
@@ -59,9 +68,5 @@ public class MotFactory {
 
         return dictionnaire;
     }
-    public static void main(String[] args) {
-        MotFactory motFactory = MotFactory.getInstance();
-        List dictionnaire = motFactory.getMots();
 
-    }
 }

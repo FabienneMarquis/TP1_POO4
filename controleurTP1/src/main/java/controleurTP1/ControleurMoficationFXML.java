@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 
 import modele_TP1.Context;
 import modele_TP1.Dictionnaire;
+import modele_TP1.LocatedImage;
 import modele_TP1.Mot;
 
 
@@ -137,12 +138,11 @@ public class ControleurMoficationFXML implements Initializable, Observer{
         System.out.println("\nIndex :" + index );
         Mot mot = Context.getInstance().getDictionnaire().getMots().get(index);
 
-        if (mot.getImageURL()!=""){
-            imageDuMot.setImage( new Image(mot.getImageURL()));}
-
+       if (!mot.getImageURL().isEmpty() ) imageDuMot.setImage( new Image( mot.getImageURL()));
+        else imageDuMot.setImage(null);
         textfielMot.setText(mot.getMot());
-
         textAreaDefinition.setText(mot.getDefinition());
+        Context.getInstance().setMotCourant(mot);
     }
 
     @FXML
@@ -155,7 +155,11 @@ public class ControleurMoficationFXML implements Initializable, Observer{
         Optional<ButtonType> result = alert.showAndWait();
 
         if (result.get() == ButtonType.OK){
-
+            Context.getInstance().getDictionnaire().supprimerMot(Context.getInstance().getMotCourant());
+            Context.getInstance().getDictionnaire().sortByMot();
+            textAreaDefinition.setText("");
+            textfielMot.setText("");
+            if (imageDuMot.getImage()!=null) imageDuMot.setImage(null);
         }
     }
 
@@ -178,6 +182,12 @@ public class ControleurMoficationFXML implements Initializable, Observer{
         Context.getInstance().addObserver(this);
 	}
 
+    /**
+     * Méthode qui permet de lien le contrôleur (observateur) à la classe Context qui est observer
+     * permet le lien entre les contrôleurs
+     * @param o
+     * @param arg
+     */
     @Override
     public void update(Observable o, Object arg) {
         textfielMot.setText(Context.getInstance().getMotCourant().getMot());
@@ -185,6 +195,8 @@ public class ControleurMoficationFXML implements Initializable, Observer{
         if(!Context.getInstance().getMotCourant().getImageURL().isEmpty())
             imageDuMot.setImage(new Image(Context.getInstance().getMotCourant().getImageURL()));
         else imageDuMot.setImage(null);
+
+
     }
 }
 

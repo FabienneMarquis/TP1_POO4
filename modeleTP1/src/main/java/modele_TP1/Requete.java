@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by 0940135 on 2016-01-04.
+ * Created by gabriel on 2016-01-04.
  */
 public class Requete {
     private String mot;
@@ -22,7 +22,7 @@ public class Requete {
     private long rechercheTime;
 
     /**
-     *
+     * requêter utiliser pour la recherche selon le mot
      * @param mot
      */
     public Requete(String mot,Dictionnaire dictionnaire) {
@@ -38,7 +38,7 @@ public class Requete {
     }
 
     /**
-     *
+     *requêter utiliser pour la recherche selon si le mot a une image associé ou non
      * @param posedeImage
      */
     public Requete(Boolean posedeImage,Dictionnaire dictionnaire) {
@@ -47,7 +47,7 @@ public class Requete {
     }
 
     /**
-     *
+     *requêter utiliser pour la recherche selon la date de création ou de modification
      * @param avantCreation
      * @param apresCreation
      * @param avantModification
@@ -62,7 +62,7 @@ public class Requete {
     }
 
     /**
-     *
+     *requêter utiliser pour la recherche selon la date de création ou de modification, un mot et une image
      * @param mot
      * @param avantCreation
      * @param apresCreation
@@ -83,20 +83,23 @@ public class Requete {
     }
 
     /**
-     *
-     * @return resultat
+     * retourne les resultats (list de mot) de la recherche
+     * @return resultat liste de mots
      */
     public final List<Mot> getResultat() {
         return resultat;
     }
 
-
+    /**
+     * méthode utilisé par la recherche par préfix
+     * @param prefix
+     */
     public void setPrefix(boolean prefix) {
         this.prefix = prefix;
     }
 
     /**
-     *
+     * méthode qui renvoit un mot
      * @return mot
      */
     public String getMot() {
@@ -104,7 +107,7 @@ public class Requete {
     }
 
     /**
-     *
+     *méthode qui renvoit la date choisi pour être le point d'avant la création
      * @return avantCreation
      */
     public LocalDate getAvantCreation() {
@@ -112,7 +115,7 @@ public class Requete {
     }
 
     /**
-     *
+     *méthode qui renvoit la date choisi pour être le point après la création
      * @return apresCreation
      */
     public LocalDate getApresCreation() {
@@ -120,7 +123,7 @@ public class Requete {
     }
 
     /**
-     *
+     *méthode qui renvoit la date choisi pour être le point d'avant une modification
      * @return avantModification
      */
     public LocalDate getAvantModification() {
@@ -128,7 +131,7 @@ public class Requete {
     }
 
     /**
-     *
+     * méthode qui renvoit la date choisi pour être le point d'après une modification
      * @return apresModification
      */
     public LocalDate getApresModification() {
@@ -136,17 +139,24 @@ public class Requete {
     }
 
     /**
-     *
+     * méthode qui renvoit si la présence d'une image est un critère de recherche
      * @return isPosedeImage
      */
     public boolean isPosedeImage() {
         return posedeImage;
     }
 
+    /**
+     * méthode qui renvoit si la recherche se fait avec un préfix
+     * @return
+     */
     public boolean isPrefix() {
         return prefix;
     }
 
+    /**
+     * Méthode de rechercher selon les critères choisis
+     */
     public void recherche(){
         rechercheTime = System.currentTimeMillis();
         Recherche recherche = new Recherche(dictionnaire);
@@ -205,6 +215,10 @@ public class Requete {
         rechercheTime = System.currentTimeMillis() - rechercheTime;
     }
 
+    /**
+     * Methode qui renvoit le temps pour effectuer la recherche
+     * @return
+     */
     public long getRechercheTime() {
         return rechercheTime;
     }

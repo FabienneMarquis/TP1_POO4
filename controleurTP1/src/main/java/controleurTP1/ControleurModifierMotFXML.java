@@ -42,6 +42,10 @@ public class ControleurModifierMotFXML implements Initializable {
     @FXML
     private ImageView imageDuMot;
 
+    /**
+     * Gestionnaire d'évènement lorsqu'une personnes appuit sur annuler
+     * @param event évènement lier au bouton annuler
+     */
     @FXML
     void annuler(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -55,16 +59,21 @@ public class ControleurModifierMotFXML implements Initializable {
         }
     }
 
+    /**
+     * gestionnaire d'évènement lorsque l'utilisateur appuit sur le bouton  modifier
+     * @param event évènement lier au bouton modifier
+     */
     @FXML
     void modifierMotConfirmation(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Avertissement");
-        alert.setHeaderText("Quitter?");
-        alert.setContentText("Voulez-vous quitter la modification de mot?");
+        alert.setHeaderText("Modification");
+        alert.setContentText("Voulez-vous enregistrer les modifications faites au mot?");
         Optional<ButtonType> result = alert.showAndWait();
 
         if (result.get() == ButtonType.OK){
-            if(sauvegarde()){
+            if(Context.getInstance().modifierMot(textfielMot.getText(),
+                    ((LocatedImage)imageDuMot.getImage())!=null?((LocatedImage)imageDuMot.getImage()).getURL():"", textAreaDefinition.getText())){
 
                 ((Stage)btModifier.getScene().getWindow()).close();
             }
@@ -77,22 +86,13 @@ public class ControleurModifierMotFXML implements Initializable {
             }
         }
     }
-    private boolean sauvegarde(){
-        if(textfielMot.getText().compareTo(Context.getInstance().getMotCourant().getMot())!=0){
-            Requete requete = new Requete(textfielMot.getText(),Context.getInstance().getDictionnaire());
-            requete.recherche();
-            if(requete.getResultat().size()>0){
-                return false;
-            }
-        }
-        Context.getInstance().getMotCourant().setMot(textfielMot.getText());
-        Context.getInstance().getMotCourant().setDefinition(textAreaDefinition.getText());
-        if(imageDuMot.getImage()!=null)
-            Context.getInstance().getMotCourant().setImageURL(((LocatedImage)imageDuMot.getImage()).getURL());
 
-        Context.getInstance().alertObservers();
-        return true;
-    }
+    /**
+     * Cette méthode est utilisé pour s'assurer que le mots choisi est tranférer à la fenêtre modifier mot puis
+     * que l'image respecte le cadre
+     * @param location
+     * @param resources
+     */
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -102,7 +102,7 @@ public class ControleurModifierMotFXML implements Initializable {
             if(!Context.getInstance().getMotCourant().getImageURL().isEmpty())
                 imageDuMot.setImage(new LocatedImage(Context.getInstance().getMotCourant().getImageURL()));
         }
-
-
+        imageDuMot.setPreserveRatio(true);
+        imageDuMot.setFitWidth(150);
     }
 }

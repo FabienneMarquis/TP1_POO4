@@ -1,4 +1,8 @@
+
 package controleurTP1;
+/**
+ * @author Fabienne et Gabriel
+ */
 
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -39,7 +43,11 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
 
     @FXML
     private TextArea textAreaDefinition;
-
+    /**
+     * lorsque l'utilisateur appuit sur le bouton annuler il enclanche cet méthode qui demande la confirmation avant
+     * de fermer ou non la fenêtre
+     * @param event
+     */
     @FXML
     void annuler(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -53,6 +61,11 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
         }
     }
 
+    /**
+     * lorsque l'utilisateur appuit sur le bouton ajouter, cette méthdoe test si il y a un mot d'entrer dans le champs
+     * d'entré mot ou si le mot existe déjà ou non dans le dictionnaire.
+      * @param event
+     */
     @FXML
     void creerNouveauMot(ActionEvent event) {
         if(textfielMot.getText().isEmpty()){
@@ -60,8 +73,9 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
             alert.setTitle("Avertissement");
             alert.setHeaderText("Erreur");
             alert.setContentText("Il n'y a aucun mot à ajouter.");
-        } else if(sauvegarde()) {
-
+        } else if(Context.getInstance().sauvegarder(textfielMot.getText(),
+                ((LocatedImage)imageDuMot.getImage())!=null?((LocatedImage)imageDuMot.getImage()).getURL():"", textAreaDefinition.getText())) {
+             Context.getInstance().getDictionnaire().sortByMot();
             ((Stage) btNouveauMot.getScene().getWindow()).close();
         }
         else {
@@ -73,37 +87,16 @@ public class ControleurNouveauMotFXML implements Initializable, Observer{
         }
     }
 
-    private boolean sauvegarde(){
-            Requete requete = new Requete(textfielMot.getText(),Context.getInstance().getDictionnaire());
-            requete.recherche();
-            if(requete.getResultat().size()>0){
-                return false;
-            }
-
-
-        if(imageDuMot.getImage()!=null){
-            Mot mot = new Mot(textfielMot.getText(),textAreaDefinition.getText(),((LocatedImage)imageDuMot.getImage()).getURL());
-            Context.getInstance().getDictionnaire().getMots().add(mot);
-            Context.getInstance().setMotCourant(mot);
-            Context.getInstance().getDictionnaire().sortByMot();
-        }
-
-        else{
-            Mot mot = new Mot(textfielMot.getText(),textAreaDefinition.getText(),"");
-            Context.getInstance().getDictionnaire().getMots().add(mot);
-            Context.getInstance().setMotCourant(mot);
-            Context.getInstance().getDictionnaire().sortByMot();
-        }
-        Context.getInstance().alertObservers();
-        return true;
-    }
 
     @Override
     public void update(Observable o, Object arg) {
-        System.out.println(((Mot)arg).getMot());
         textfielMot.setText(((Mot)arg).getMot());
     }
-
+    /**
+     * Cette méthode est utilisé pour s'assurer que l'image respecte le cadre
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         imageDuMot.setPreserveRatio(true);

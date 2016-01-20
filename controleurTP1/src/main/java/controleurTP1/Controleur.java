@@ -1,4 +1,7 @@
 package controleurTP1;
+/**
+ * @author Créer par Team Gabriel Fabienne
+ */
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -48,17 +51,16 @@ public class Controleur extends Application implements Initializable{
 	primaryStage.show();
 		
 	}
-	
-	
+
 	/**
-	 * Methode qui réinitie la recherche ? ou qui implémente le dictionnaire de base avant le début du programme
-	 * 
-	 */
-	
+	 * Methode vide (garder au cas où nous aurions besoin de
+ 	 * @param arg0
+	 * @param arg1
+     */
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
+
 
 	}
 	
