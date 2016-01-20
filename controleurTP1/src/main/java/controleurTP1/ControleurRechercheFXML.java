@@ -111,7 +111,12 @@ public class ControleurRechercheFXML extends Observable implements Initializable
 				};
 			}
 		});
-		statDeRecherche.setText("Resultats: "+requete.getResultat().size()+ " Temps: " + requete.getRechercheTime());
+		statDeRecherche.setText("Resultats: " + requete.getResultat().size() + " Temps: " + requete.getRechercheTime());
+	}
+
+	@FXML
+	void annulerRecherche(ActionEvent event){
+
 	}
 
 	@Override

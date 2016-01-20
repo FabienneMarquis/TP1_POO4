@@ -100,7 +100,7 @@ public class ControleurModifierMotFXML implements Initializable {
             textfielMot.setText(Context.getInstance().getMotCourant().getMot());
             textAreaDefinition.setText(Context.getInstance().getMotCourant().getDefinition());
             if(!Context.getInstance().getMotCourant().getImageURL().isEmpty())
-                imageDuMot.setImage(new Image(Context.getInstance().getMotCourant().getImageURL()));
+                imageDuMot.setImage(new LocatedImage(Context.getInstance().getMotCourant().getImageURL()));
         }
 
 
